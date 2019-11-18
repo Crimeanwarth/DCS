@@ -123,6 +123,33 @@ test/fast:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+libraries/graphs/graphs.o: libraries/graphs/graphs.cpp.o
+
+.PHONY : libraries/graphs/graphs.o
+
+# target to build an object file
+libraries/graphs/graphs.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libraries/graphs/graphs.cpp.o
+.PHONY : libraries/graphs/graphs.cpp.o
+
+libraries/graphs/graphs.i: libraries/graphs/graphs.cpp.i
+
+.PHONY : libraries/graphs/graphs.i
+
+# target to preprocess a source file
+libraries/graphs/graphs.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libraries/graphs/graphs.cpp.i
+.PHONY : libraries/graphs/graphs.cpp.i
+
+libraries/graphs/graphs.s: libraries/graphs/graphs.cpp.s
+
+.PHONY : libraries/graphs/graphs.s
+
+# target to generate assembly for a file
+libraries/graphs/graphs.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libraries/graphs/graphs.cpp.s
+.PHONY : libraries/graphs/graphs.cpp.s
+
 libraries/logicgates/logicgates.o: libraries/logicgates/logicgates.cpp.o
 
 .PHONY : libraries/logicgates/logicgates.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... libraries/graphs/graphs.o"
+	@echo "... libraries/graphs/graphs.i"
+	@echo "... libraries/graphs/graphs.s"
 	@echo "... libraries/logicgates/logicgates.o"
 	@echo "... libraries/logicgates/logicgates.i"
 	@echo "... libraries/logicgates/logicgates.s"

@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.h">
+			<Option target="test"/>
+		</Unit>
 		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.cpp">
 			<Option target="test"/>
 		</Unit>
