@@ -14,7 +14,7 @@ graphs::graphs(std::map<std::string, std::string> outputPerGateMapGiven,
                std::map<std::string, std::vector<string>> inputPerGateMapGiven,
                std::map<std::string, std::vector<int>> inputsMapGiven,
                std::map<std::string, std::vector<int>> outputMapGiven,
-               std::map<std::string, std::vector<bool>> adjancencyMapGiven,
+               std::map<std::string, int> adjancencyMapGiven,
                std::map<std::string, std::string> nameTypeMapGiven, int gateNumberGiven, int inputNumberGiven,
                int outputNumberGiven, int simulationSizeGiven) {
 
@@ -36,13 +36,30 @@ graphs::graphs(std::map<std::string, std::string> outputPerGateMapGiven,
     }
 }
 void graphs::DFS() {
-    std::map<std::string, class gateInfo>::iterator it = gatesMap.begin();
-    while (it != gatesMap.end()) {
-
+    auto it = gatesMap.begin();
+    bool rangeControl = false;
+    while(rangeControl == false) {
+        while (it != gatesMap.end()) {
+            if (it->second.waveRank == 0 && entryLevelGateVerifier(it->second.inputNames)) {
+                it->second.waveRank = 1;
+                adjancencyMap[it->first] = 1;
+            } else {
+                it->second.waveRank = postGateVerifier(it->second.inputNames, it->second.waveRank);
+                adjancencyMap[it->first] = it->second.waveRank;
+            }
+        }
+        auto itControl = adjancencyMap.begin();
+        while(itControl != adjancencyMap.end()) {
+            if (itControl->second == 0) {
+                break;
+            } else if (++itControl == adjancencyMap.end()) {
+                rangeControl == true;
+            }
+        }
     }
 }
 void graphs::GateExtractor() {
-    std::map<std::string, std::string>::iterator it = nameTypeMap.begin(); // Map iterator declarations
+    auto it = nameTypeMap.begin(); // Map iterator declarations
 
     while (it != nameTypeMap.end()){ // Initializes the class map that stores the gates
         gatesMap.insert(std::make_pair(it->first, gateInfo(it->first, it->second,inputPerGateMap[it->first],outputPerGateMap[it->first])));
@@ -60,14 +77,13 @@ bool graphs::entryLevelGateVerifier(std::vector<std::string> gateInputNames) {
     }
     return true;
 }
-int graphs::postGateVerifier(std::vector<std::string> gateInputNames, std::vector<std::string> gateOutputNameVector, int gateWaveRank) {
-    std::map<std::string,std::string>::iterator itOut = outputPerGateMap.begin();
+int graphs::postGateVerifier(std::vector<std::string> gateInputNames, int gateWaveRank) {
+    auto itOut = outputPerGateMap.begin();
     std::vector<int> waveRankVector(gateInputNames.size(), 0);
     if (gateWaveRank == 0) {
         for (int i = 0; i < gateInputNames.size(); i++) {
             while (itOut != outputPerGateMap.end()) {
-                if (gateInputNames[i] == outputPerGateMap[itOut->first] &&
-                    gatesMap[itOut->first].waveRank != 0) { // 0 as rank is reserved only for circuit inputs
+                if (gateInputNames[i] == outputPerGateMap[itOut->first] && gatesMap[itOut->first].waveRank != 0) { // 0 as rank is reserved only for circuit inputs
                     waveRankVector[i] = 1 + gatesMap[itOut->first].waveRank; //injects potential waverank
                 }
             }
@@ -80,7 +96,6 @@ int graphs::postGateVerifier(std::vector<std::string> gateInputNames, std::vecto
     } else {
         return gateWaveRank;
     }
-
 }
 gateInfo::gateInfo( std::string nameGiven,
                     std::string typeGiven,

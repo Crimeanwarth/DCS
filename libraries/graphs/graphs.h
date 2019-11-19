@@ -29,7 +29,7 @@ public:
     std::map<std::string, std::vector<string>> inputPerGateMap;
     std::map<std::string, std::vector<int>> inputsMap;
     std::map<std::string, std::vector<int>> outputMap;
-    std::map<std::string, std::vector<bool>> adjancencyMap;
+    std::map<std::string, int> adjancencyMap;
     std::map<std::string, std::string> nameTypeMap;
     std::map<std::string, class gateInfo> gatesMap;
     //std::map<std::string, std::map< std::string,std::map< std::vector<std::string>, std::map<std::string, std::map< int,std::vector<int>>>>>> graph;// name::type::inputsName::outputName::inputSize::inputs
@@ -43,7 +43,7 @@ public:
             std::map<std::string, std::vector<string>> inputPerGateMapGiven,
             std::map<std::string,std::vector<int>> inputsMapGiven,
             std::map<std::string, std::vector<int>> outputMapGiven,
-            std::map<std::string, std::vector<bool>> adjancencyMapGiven,
+            std::map<std::string, int> adjancencyMapGiven,
             std::map<std::string,std::string> nameTypeMapGiven,
             int gateNumberGiven, int inputNumberGiven, int outputNumberGiven, int simulationSizeGiven);
     ~graphs();
@@ -53,7 +53,7 @@ private:
     void Simulation (int simulationTurnToken);
     void GateExtractor ();
     bool entryLevelGateVerifier(std::vector<std::string> gateInputNames);
-    int postGateVerifier(std::vector<std::string> gateInputNames, std::vector<std::string> gateOutputNameVector, int gateWaveRank );
+    int postGateVerifier(std::vector<std::string> gateInputNames, int gateWaveRank );
 
 };
 
