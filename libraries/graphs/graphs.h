@@ -28,8 +28,9 @@ public:
     std::map<std::string, std::string> outputPerGateMap;
     std::map<std::string, std::vector<string>> inputPerGateMap;
     std::map<std::string, std::vector<int>> inputsMap;
-    std::map<std::string, std::vector<int>> outputMap;
+    std::map<std::string, std::vector<int>> outputsMap;
     std::map<std::string, int> adjancencyMap;
+    std::map<std::string, bool> graphCheckMap;
     std::map<std::string, std::string> nameTypeMap;
     std::map<std::string, class gateInfo> gatesMap;
     //std::map<std::string, std::map< std::string,std::map< std::vector<std::string>, std::map<std::string, std::map< int,std::vector<int>>>>>> graph;// name::type::inputsName::outputName::inputSize::inputs
@@ -67,6 +68,7 @@ public:
     std::vector<std::string> inputNames;
     std::string outputName;
     std::map<std::string, vector<int>> inputValues;
+    std::vector<int> outputValues;
 
     gateInfo( std::string nameGiven,
               std::string typeGiven,
