@@ -87,7 +87,7 @@ void graphs::Simulation(int simulationTurnToken) {
         }
         logicgates actualGate(gatesMap[gateNumber->first].inputSize,gatesMap[gateNumber->first].name,gatesMap[gateNumber->first].type,inputVector); //calculating
         gatesMap[gateNumber->first].outputValues.push_back(actualGate.output); //indexing result
-        outputsMap[gatesMap[gateNumber->first].outputName].push_back(actualGate.output);// indexing result
+        outputsMap[gatesMap[gateNumber->first].outputName][simulationTurnToken] = actualGate.output;// indexing result
         } else if(gateNumber->second == false) {
             std::vector<int> inputVector(gatesMap[gateNumber->first].inputSize,0);
             for (int i = 0; i < inputVector.size(); i++){
@@ -99,7 +99,7 @@ void graphs::Simulation(int simulationTurnToken) {
             }
             logicgates actualGate(gatesMap[gateNumber->first].inputSize,gatesMap[gateNumber->first].name,gatesMap[gateNumber->first].type,inputVector); //calculating
             gatesMap[gateNumber->first].outputValues.push_back(actualGate.output); //indexing result
-            outputsMap[gatesMap[gateNumber->first].outputName].push_back(actualGate.output);// indexing result
+            outputsMap[gatesMap[gateNumber->first].outputName][simulationTurnToken] = actualGate.output;// indexing result
         } else {
             cout << "\033[1;31m ERROR: DFS Re-visits a node, please check your gate names. Line 104 of graphs.cpp \033[0m\n" << endl;
             terminate();
@@ -152,6 +152,4 @@ gateInfo::gateInfo( std::string nameGiven,
     outputName  = outputNameGiven;
     //inputValues = inputValuesGiven;
     inputSize   = inputNamesGiven.size();
-
-
 }

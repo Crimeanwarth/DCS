@@ -38,7 +38,6 @@ public:
     int inputNumber;
     int outputNumber;
     int simulationSize;
-    int simulationTurnToken = 0;
     // Constructor
     graphs( std::map<std::string, std::string> outputPerGateMapGiven,
             std::map<std::string, std::vector<string>> inputPerGateMapGiven,
@@ -48,7 +47,6 @@ public:
             std::map<std::string,std::string> nameTypeMapGiven,
             int gateNumberGiven, int inputNumberGiven, int outputNumberGiven, int simulationSizeGiven);
     ~graphs();
-private:
     // Methods declaration
     void DFS ();
     void Simulation (int simulationTurnToken);
