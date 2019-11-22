@@ -37,10 +37,10 @@ graphs::graphs(std::map<std::string, std::string> outputPerGateMapGiven,
 }
 graphs::~graphs() {};
 void graphs::DFS() {
-    auto it = gatesMap.begin();
-    auto itControl = adjancencyMap.begin();
     bool rangeControl = false;
     while(rangeControl == false) {
+        auto it = gatesMap.begin();
+        auto itControl = adjancencyMap.begin();
         while (it != gatesMap.end()) {
             if (it->second->waveRank == 0 && entryLevelGateVerifier(it->second->inputNames)) {
                 it->second->waveRank = 1;
@@ -57,11 +57,11 @@ void graphs::DFS() {
             }
         }
         while(itControl != adjancencyMap.end()) {
+            auto check = itControl;
+            check++;
             if (itControl->second == 0){
-                it = gatesMap.begin();
-                itControl = adjancencyMap.begin();
                 break;
-            } else if (++itControl == adjancencyMap.end()) {
+            } else if (check == adjancencyMap.end()) {
                 rangeControl = true;
             }
             itControl++;

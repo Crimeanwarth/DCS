@@ -43,17 +43,17 @@ graphs_test::graphs_test(){
         cout << "\033[1;31m Test waveRank of is FAIL! \033[0m\n" << endl;
     }
     if (test_circuit.adjancencyMap["G2"] == 1) {
-        cout << "\033[1;32m Test waveRank of G1 is PASS \033[0m\n" << endl;
+        cout << "\033[1;32m Test waveRank of G2 is PASS \033[0m\n" << endl;
     } else {
         cout << "\033[1;31m Test waveRank of is FAIL! \033[0m\n" << endl;
     }
     if (test_circuit.adjancencyMap["G3"] == 2) {
-        cout << "\033[1;32m Test waveRank of G1 is PASS \033[0m\n" << endl;
+        cout << "\033[1;32m Test waveRank of G3 is PASS \033[0m\n" << endl;
     } else {
         cout << "\033[1;31m Test waveRank of is FAIL! \033[0m\n" << endl;
     }
     if (test_circuit.adjancencyMap["G4"] == 3) {
-        cout << "\033[1;32m Test waveRank of G1 is PASS \033[0m\n" << endl;
+        cout << "\033[1;32m Test waveRank of G4 is PASS \033[0m\n" << endl;
     } else {
         cout << "\033[1;31m Test waveRank of is FAIL! \033[0m\n" << endl;
     }
