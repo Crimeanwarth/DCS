@@ -87,7 +87,7 @@ void graphs::Simulation(int simulationTurnToken) {
             inputIt++;
             i++;
         }
-        logicgates actualGate(gatesMap[gateNumber->first]->inputSize,gatesMap[gateNumber->first]->name,gatesMap[gateNumber->first]->type,inputVector); //calculating
+        logicgates actualGate(gatesMap[gateNumber->first]->inputSize,gatesMap[gateNumber->first]->name,gatesMap[gateNumber->first]->type,inputVector,gatesMap[gateNumber->first]->outputName, gatesMap[gateNumber->first]->inputNames); //calculating
         gatesMap[gateNumber->first]->outputValues.push_back(actualGate.output); //indexing result
         outputsMap[gatesMap[gateNumber->first]->outputName][simulationTurnToken] = actualGate.output;// indexing result
         } else if(gateNumber->second == false) {
@@ -99,7 +99,7 @@ void graphs::Simulation(int simulationTurnToken) {
                     inputVector[i] = outputsMap[gatesMap[gateNumber->first]->inputNames[i]][simulationTurnToken];
                 }
             }
-            logicgates actualGate(gatesMap[gateNumber->first]->inputSize,gatesMap[gateNumber->first]->name,gatesMap[gateNumber->first]->type,inputVector); //calculating
+            logicgates actualGate(gatesMap[gateNumber->first]->inputSize,gatesMap[gateNumber->first]->name,gatesMap[gateNumber->first]->type,inputVector,gatesMap[gateNumber->first]->outputName, gatesMap[gateNumber->first]->inputNames); //calculating
             gatesMap[gateNumber->first]->outputValues.push_back(actualGate.output); //indexing result
             outputsMap[gatesMap[gateNumber->first]->outputName][simulationTurnToken] = actualGate.output;// indexing result
         } else {

@@ -10,7 +10,7 @@
 using namespace std;
 
     //Constructor and Destructor
-    logicgates::logicgates (int inputSizeGiven,string nameGiven, string typeGiven, vector<int> inputsGiven){
+    logicgates::logicgates (int inputSizeGiven,string nameGiven, string typeGiven, vector<int> inputsGiven, std::string outputNameGiven, std::vector<std::string> inputNamesGiven){
         if (inputSizeGiven == 0){
             cout << "ERROR: Minimum input size is 1 " << endl;
             exit(-1);
@@ -19,6 +19,8 @@ using namespace std;
             inputSize = inputSizeGiven;
             name = nameGiven;
             type = typeGiven;
+            outputName = outputNameGiven;
+            inputNames = inputNamesGiven;
             if (inputs.size() == inputsGiven.size()){ //checks if the array sizes are equal in order to prevent segmentation error.
                 inputs = inputsGiven;
             }else{
@@ -33,6 +35,8 @@ using namespace std;
             inputSize = inputSizeGiven;
             name = nameGiven;
             type = typeGiven;
+            outputName = outputNameGiven;
+            inputNames = inputNamesGiven;
             if (inputs.size() == inputsGiven.size()){ //checks if the array sizes are equal in order to prevent segmentation error.
                 inputs = inputsGiven;
             }else{
@@ -47,9 +51,9 @@ using namespace std;
         cout << "Name: " << name << " TYPE: " << type << " Input Size: " << inputSize << endl;
         for (int i = 0; i<inputSize; i++)
         {
-            cout << " Input number : " << i << " Value : " << inputs[i] << endl;
+            cout << " Input name : " << inputNames[i] << " Value : " << inputs[i] << endl;
         }
-        cout << " Output : " << output << endl;
+        cout << " Output Name : " << outputName << " Value : " << output << endl;
         cout << "\n\n" << endl;
     }
 

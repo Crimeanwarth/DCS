@@ -16,7 +16,7 @@ logicgates_test::~logicgates_test(){};
 // Test functions
 void logicgates_test::constructor_test(){
         logicgates_test test;
-        logicgates gates(test.inputSize,test.name,test.type,test.inputs);
+        logicgates gates(test.inputSize,test.name,test.type,test.inputs,outputName,inputNames);
 
         if (gates.inputSize == test.inputSize){
             cout << "\033[1;32m Test inputSize is PASS \033[0m\n" << endl;
