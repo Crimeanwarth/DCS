@@ -8,6 +8,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <map>
+
 
 class gateInfo{
 public:

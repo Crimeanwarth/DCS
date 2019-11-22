@@ -13,13 +13,13 @@
 
 class graphs_test {
 public:
-    const std::map<std::string, std::string> outputPerGateMap_test = {
+    std::map<std::string, std::string> outputPerGateMap_test = {
             {"G1","a"},
             {"G2","b"},
             {"G3","c"},
             {"G4","S1"}
     };
-    const std::map<std::string, std::vector<string>> inputPerGateMap_test = {
+    std::map<std::string, std::vector<string>> inputPerGateMap_test = {
             {"G1", {"E1","E2"}},
             {"G2", {"E4"}},
             {"G3", {"b"}},
@@ -64,11 +64,6 @@ public:
     graphs_test();
     ~graphs_test();
 
-    void DFS_test();
-    void Simulation_test(int simulationTurnToken);
-    void GateExtractor_test();
-    bool entryLevelGateVerifier_test(std::vector<std::string> gateInputNames);
-    int postGateVerifier_test(std::vector<std::string> gateInputNames, int gateWaveRank );
 };
 
 

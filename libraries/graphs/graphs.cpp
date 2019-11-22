@@ -38,6 +38,7 @@ graphs::graphs(std::map<std::string, std::string> outputPerGateMapGiven,
 graphs::~graphs() {};
 void graphs::DFS() {
     auto it = gatesMap.begin();
+    auto itControl = adjancencyMap.begin();
     bool rangeControl = false;
     while(rangeControl == false) {
         while (it != gatesMap.end()) {
@@ -55,9 +56,10 @@ void graphs::DFS() {
                 it++;
             }
         }
-        auto itControl = adjancencyMap.begin();
         while(itControl != adjancencyMap.end()) {
-            if (itControl->second == 0) {
+            if (itControl->second == 0){
+                it = gatesMap.begin();
+                itControl = adjancencyMap.begin();
                 break;
             } else if (++itControl == adjancencyMap.end()) {
                 rangeControl = true;

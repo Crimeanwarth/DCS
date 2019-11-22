@@ -80,10 +80,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/graphs/gateInfo.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/graphs/gateInfo.h">
+			<Option target="test"/>
+		</Unit>
 		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.cpp">
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.h">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs_test.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs_test.h">
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.cpp">

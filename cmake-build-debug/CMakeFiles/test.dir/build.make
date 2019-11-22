@@ -109,12 +109,40 @@ CMakeFiles/test.dir/libraries/graphs/graphs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/libraries/graphs/graphs.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.cpp -o CMakeFiles/test.dir/libraries/graphs/graphs.cpp.s
 
+CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.o: ../libraries/graphs/gateInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.o -c /Users/deniztohumcu/Desktop/DCS/libraries/graphs/gateInfo.cpp
+
+CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/deniztohumcu/Desktop/DCS/libraries/graphs/gateInfo.cpp > CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.i
+
+CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/deniztohumcu/Desktop/DCS/libraries/graphs/gateInfo.cpp -o CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.s
+
+CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.o: ../libraries/graphs/graphs_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.o -c /Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs_test.cpp
+
+CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs_test.cpp > CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.i
+
+CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs_test.cpp -o CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.s
+
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/main.cpp.o" \
 "CMakeFiles/test.dir/libraries/logicgates/logicgates.cpp.o" \
 "CMakeFiles/test.dir/libraries/logicgates/logicgates_test.cpp.o" \
-"CMakeFiles/test.dir/libraries/graphs/graphs.cpp.o"
+"CMakeFiles/test.dir/libraries/graphs/graphs.cpp.o" \
+"CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.o" \
+"CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
@@ -123,9 +151,11 @@ test: CMakeFiles/test.dir/main.cpp.o
 test: CMakeFiles/test.dir/libraries/logicgates/logicgates.cpp.o
 test: CMakeFiles/test.dir/libraries/logicgates/logicgates_test.cpp.o
 test: CMakeFiles/test.dir/libraries/graphs/graphs.cpp.o
+test: CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.o
+test: CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
