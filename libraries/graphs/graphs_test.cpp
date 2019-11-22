@@ -58,6 +58,7 @@ graphs_test::graphs_test(){
         cout << "\033[1;31m Test waveRank of is FAIL! \033[0m\n" << endl;
     }
 
+    test_circuit.Simulation(test_circuit.simulationSize);
 
 
 }
