@@ -7,7 +7,6 @@
 #include <vector>
 #include <map>
 #include <string>
-#include <algorithm>
 #include "../logicgates/logicgates.h"
 #include "gateInfo.h"
 
@@ -70,7 +69,6 @@ void graphs::DFS() {
 void graphs::GateExtractor() {
     auto it = nameTypeMap.begin(); // Map iterator declarations
     while (it != nameTypeMap.end()){ // Initializes the class map that stores the gates
-
         gatesMap.insert(std::make_pair(it->first, new gateInfo(it->first, it->second,inputPerGateMap[it->first],outputPerGateMap[it->first])));
         it++;
     }

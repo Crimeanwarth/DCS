@@ -14,7 +14,7 @@ public:
     // Test constants
     const std::string type = "AND";
     const std::string name = "G1";
-    const std::vector<int> inputs = {1,0};
+    std::vector<int> inputs = {1,0};
     int output;
     const int inputSize = 2;
     // Constructors
