@@ -76,12 +76,12 @@ void graphs::GateExtractor() {
     }
 }
 void graphs::Simulation(int simulationTurnToken) {
-    auto gateNumber = graphCheckMap.begin();
-    while ( gateNumber != graphCheckMap.end()){
-        if (gatesMap[gateNumber->first]->waveRank == 1 && gateNumber->second == false){ //first wave
+    auto gateNumber = graphCheckMap.begin(); // iterator generation
+    while ( gateNumber != graphCheckMap.end()){ // until we reach the end of the map
+        if (gatesMap[gateNumber->first]->waveRank == 1 && gateNumber->second == false){ //first wave: wave rank 1
         std::vector<int> inputVector(gatesMap[gateNumber->first]->inputSize,0); // initializing the input vector
-        int i = 0;
-        auto inputIt = gatesMap[gateNumber->first]->inputValues.begin();
+        int i = 0; // iterator for the input vector
+        auto inputIt = gatesMap[gateNumber->first]->inputValues.begin(); // iterator creation for gates map
         while(inputIt != gatesMap[gateNumber->first]->inputValues.end()){// appending the input vector
             inputVector[i] = inputIt->second[simulationTurnToken];
             inputIt++;
@@ -94,7 +94,7 @@ void graphs::Simulation(int simulationTurnToken) {
             std::vector<int> inputVector(gatesMap[gateNumber->first]->inputSize,0);
             for (int i = 0; i < inputVector.size(); i++){
                 if(inputsMap.find(gatesMap[gateNumber->first]->inputNames[i]) != inputsMap.end()){
-                    inputVector[i] = gatesMap[gateNumber->first]->inputValues[gatesMap[gateNumber->first]->inputNames[i]][simulationTurnToken];
+                    inputVector[i] = inputsMap[gatesMap[gateNumber->first]->inputNames[i]][simulationTurnToken];
                 }else if (outputsMap.find(gatesMap[gateNumber->first]->inputNames[i]) != outputsMap.end()){
                     inputVector[i] = outputsMap[gatesMap[gateNumber->first]->inputNames[i]][simulationTurnToken];
                 }
