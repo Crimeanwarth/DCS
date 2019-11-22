@@ -9,6 +9,7 @@
 #include <string>
 #include <algorithm>
 #include "../logicgates/logicgates.h"
+#include "gateInfo.h"
 
 graphs::graphs(std::map<std::string, std::string> outputPerGateMapGiven,
                std::map<std::string, std::vector<string>> inputPerGateMapGiven,
@@ -29,26 +30,27 @@ graphs::graphs(std::map<std::string, std::string> outputPerGateMapGiven,
     outputNumber     = outputNumberGiven;
     simulationSize   = simulationSizeGiven;
 
-    GateExtractor();
-    DFS(); // Finds the depth of the given circuit and classes the gates in order of reach where 0 means inputs and max means outputs
-    for (int i = 0; i < simulationSize; i++){
-        Simulation(i);
-    }
+    //GateExtractor();
+    //DFS(); // Finds the depth of the given circuit and classes the gates in order of reach where 0 means inputs and max means outputs
+    //for (int i = 0; i < simulationSize; i++){
+      //  Simulation(i);
+    //}
 }
+graphs::~graphs() {};
 void graphs::DFS() {
     auto it = gatesMap.begin();
     bool rangeControl = false;
     while(rangeControl == false) {
         while (it != gatesMap.end()) {
-            if (it->second.waveRank == 0 && entryLevelGateVerifier(it->second.inputNames)) {
-                it->second.waveRank = 1;
+            if (it->second->waveRank == 0 && entryLevelGateVerifier(it->second->inputNames)) {
+                it->second->waveRank = 1;
                 adjancencyMap[it->first] = 1;
                 graphCheckMap.insert(std::pair<std::string, bool>(it->first,false));//Graph creation
                 it++;
-            } else if(it->second.waveRank == 0){
-                it->second.waveRank = postGateVerifier(it->second.inputNames, it->second.waveRank);
-                adjancencyMap[it->first] = it->second.waveRank;
-                if (it->second.waveRank != 0){ //Graph creation
+            } else if(it->second->waveRank == 0){
+                it->second->waveRank = postGateVerifier(it->second->inputNames, it->second->waveRank);
+                adjancencyMap[it->first] = it->second->waveRank;
+                if (it->second->waveRank != 0){ //Graph creation
                     graphCheckMap.insert(std::pair<std::string, bool>(it->first,false));//Graph creation
                 }
                 it++;
@@ -59,7 +61,7 @@ void graphs::DFS() {
             if (itControl->second == 0) {
                 break;
             } else if (++itControl == adjancencyMap.end()) {
-                rangeControl == true;
+                rangeControl = true;
             }
             itControl++;
         }
@@ -67,39 +69,39 @@ void graphs::DFS() {
 }
 void graphs::GateExtractor() {
     auto it = nameTypeMap.begin(); // Map iterator declarations
-
     while (it != nameTypeMap.end()){ // Initializes the class map that stores the gates
-        gatesMap.insert(std::make_pair(it->first, gateInfo(it->first, it->second,inputPerGateMap[it->first],outputPerGateMap[it->first])));
+
+        gatesMap.insert(std::make_pair(it->first, new gateInfo(it->first, it->second,inputPerGateMap[it->first],outputPerGateMap[it->first])));
         it++;
     }
 }
 void graphs::Simulation(int simulationTurnToken) {
     auto gateNumber = graphCheckMap.begin();
     while ( gateNumber != graphCheckMap.end()){
-        if (gatesMap[gateNumber->first].waveRank == 1 && gateNumber->second == false){ //first wave
-        std::vector<int> inputVector(gatesMap[gateNumber->first].inputSize,0); // initializing the input vector
+        if (gatesMap[gateNumber->first]->waveRank == 1 && gateNumber->second == false){ //first wave
+        std::vector<int> inputVector(gatesMap[gateNumber->first]->inputSize,0); // initializing the input vector
         int i = 0;
-        auto inputIt = gatesMap[gateNumber->first].inputValues.begin();
-        while(inputIt != gatesMap[gateNumber->first].inputValues.end()){// appending the input vector
+        auto inputIt = gatesMap[gateNumber->first]->inputValues.begin();
+        while(inputIt != gatesMap[gateNumber->first]->inputValues.end()){// appending the input vector
             inputVector[i] = inputIt->second[simulationTurnToken];
             inputIt++;
             i++;
         }
-        logicgates actualGate(gatesMap[gateNumber->first].inputSize,gatesMap[gateNumber->first].name,gatesMap[gateNumber->first].type,inputVector); //calculating
-        gatesMap[gateNumber->first].outputValues.push_back(actualGate.output); //indexing result
-        outputsMap[gatesMap[gateNumber->first].outputName][simulationTurnToken] = actualGate.output;// indexing result
+        logicgates actualGate(gatesMap[gateNumber->first]->inputSize,gatesMap[gateNumber->first]->name,gatesMap[gateNumber->first]->type,inputVector); //calculating
+        gatesMap[gateNumber->first]->outputValues.push_back(actualGate.output); //indexing result
+        outputsMap[gatesMap[gateNumber->first]->outputName][simulationTurnToken] = actualGate.output;// indexing result
         } else if(gateNumber->second == false) {
-            std::vector<int> inputVector(gatesMap[gateNumber->first].inputSize,0);
+            std::vector<int> inputVector(gatesMap[gateNumber->first]->inputSize,0);
             for (int i = 0; i < inputVector.size(); i++){
-                if(inputsMap.find(gatesMap[gateNumber->first].inputNames[i]) != inputsMap.end()){
-                    inputVector[i] = gatesMap[gateNumber->first].inputValues[gatesMap[gateNumber->first].inputNames[i]][simulationTurnToken];
-                }else if (outputsMap.find(gatesMap[gateNumber->first].inputNames[i]) != outputsMap.end()){
-                    inputVector[i] = outputsMap[gatesMap[gateNumber->first].inputNames[i]][simulationTurnToken];
+                if(inputsMap.find(gatesMap[gateNumber->first]->inputNames[i]) != inputsMap.end()){
+                    inputVector[i] = gatesMap[gateNumber->first]->inputValues[gatesMap[gateNumber->first]->inputNames[i]][simulationTurnToken];
+                }else if (outputsMap.find(gatesMap[gateNumber->first]->inputNames[i]) != outputsMap.end()){
+                    inputVector[i] = outputsMap[gatesMap[gateNumber->first]->inputNames[i]][simulationTurnToken];
                 }
             }
-            logicgates actualGate(gatesMap[gateNumber->first].inputSize,gatesMap[gateNumber->first].name,gatesMap[gateNumber->first].type,inputVector); //calculating
-            gatesMap[gateNumber->first].outputValues.push_back(actualGate.output); //indexing result
-            outputsMap[gatesMap[gateNumber->first].outputName][simulationTurnToken] = actualGate.output;// indexing result
+            logicgates actualGate(gatesMap[gateNumber->first]->inputSize,gatesMap[gateNumber->first]->name,gatesMap[gateNumber->first]->type,inputVector); //calculating
+            gatesMap[gateNumber->first]->outputValues.push_back(actualGate.output); //indexing result
+            outputsMap[gatesMap[gateNumber->first]->outputName][simulationTurnToken] = actualGate.output;// indexing result
         } else {
             cout << "\033[1;31m ERROR: DFS Re-visits a node, please check your gate names. Line 104 of graphs.cpp \033[0m\n" << endl;
             terminate();
@@ -122,8 +124,8 @@ int graphs::postGateVerifier(std::vector<std::string> gateInputNames, int gateWa
     if (gateWaveRank == 0) {
         for (int i = 0; i < gateInputNames.size(); i++) {
             while (itOut != outputPerGateMap.end()) {
-                if (gateInputNames[i] == outputPerGateMap[itOut->first] && gatesMap[itOut->first].waveRank != 0) { // means not calculated 0 as rank is reserved only for circuit inputs
-                    waveRankVector[i] = 1 + gatesMap[itOut->first].waveRank; //injects potential waverank
+                if (gateInputNames[i] == outputPerGateMap[itOut->first] && gatesMap[itOut->first]->waveRank != 0) { // means not calculated 0 as rank is reserved only for circuit inputs
+                    waveRankVector[i] = 1 + gatesMap[itOut->first]->waveRank; //injects potential waverank
                     break;
                 } else if (inputsMap.find(gateInputNames[i]) != inputsMap.end()) {
                     waveRankVector[i] = 1;
@@ -140,16 +142,4 @@ int graphs::postGateVerifier(std::vector<std::string> gateInputNames, int gateWa
     } else {
         return gateWaveRank;
     }
-}
-gateInfo::gateInfo( std::string nameGiven,
-                    std::string typeGiven,
-                    std::vector<std::string> inputNamesGiven,
-                    std::string outputNameGiven) {
-
-    name        = nameGiven;
-    type        = typeGiven;
-    inputNames  = inputNamesGiven;
-    outputName  = outputNameGiven;
-    //inputValues = inputValuesGiven;
-    inputSize   = inputNamesGiven.size();
 }

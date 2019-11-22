@@ -10,6 +10,8 @@
 #include <string>
 #include <map>
 #include "../logicgates/logicgates.h"
+#include "gateInfo.h"
+
 
 using namespace std;
 
@@ -32,7 +34,7 @@ public:
     std::map<std::string, int> adjancencyMap;
     std::map<std::string, bool> graphCheckMap;
     std::map<std::string, std::string> nameTypeMap;
-    std::map<std::string, class gateInfo> gatesMap;
+    std::map<std::string, gateInfo*> gatesMap;
     //std::map<std::string, std::map< std::string,std::map< std::vector<std::string>, std::map<std::string, std::map< int,std::vector<int>>>>>> graph;// name::type::inputsName::outputName::inputSize::inputs
     int gateNumber;
     int inputNumber;
@@ -53,24 +55,6 @@ public:
     void GateExtractor ();
     bool entryLevelGateVerifier(std::vector<std::string> gateInputNames);
     int postGateVerifier(std::vector<std::string> gateInputNames, int gateWaveRank );
-
 };
 
-class gateInfo {
-public:
-    int waveRank = 0;
-    int inputSize;
-    int output;
-    std::string name;
-    std::string type;
-    std::vector<std::string> inputNames;
-    std::string outputName;
-    std::map<std::string, vector<int>> inputValues;
-    std::vector<int> outputValues;
-
-    gateInfo( std::string nameGiven,
-              std::string typeGiven,
-              std::vector<std::string> inputNamesGiven,
-              std::string outputNameGiven);
-};
 #endif //DCS_GRAPHS_H

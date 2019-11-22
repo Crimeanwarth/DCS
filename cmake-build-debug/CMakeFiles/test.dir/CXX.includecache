@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.h
+/Users/deniztohumcu/Desktop/DCS/libraries/graphs/gateInfo.h
 iostream
 -
 vector
@@ -14,19 +14,43 @@ vector
 string
 -
 
-/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates_test.h
+/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.cpp
+graphs.h
+/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.h
+iostream
+-
+vector
+-
+map
+-
+string
+-
+algorithm
+-
+../logicgates/logicgates.h
+/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.h
+gateInfo.h
+/Users/deniztohumcu/Desktop/DCS/libraries/graphs/gateInfo.h
+
+/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.h
 iostream
 -
 vector
 -
 string
 -
+map
+-
+../logicgates/logicgates.h
+/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.h
+gateInfo.h
+/Users/deniztohumcu/Desktop/DCS/libraries/graphs/gateInfo.h
 
-/Users/deniztohumcu/Desktop/DCS/main.cpp
+/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.h
 iostream
 -
-./libraries/logicgates/logicgates.h
-/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.h
-./libraries/logicgates/logicgates_test.h
-/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates_test.h
+vector
+-
+string
+-
 
