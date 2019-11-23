@@ -29,11 +29,11 @@ graphs::graphs(std::map<std::string, std::string> outputPerGateMapGiven,
     outputNumber     = outputNumberGiven;
     simulationSize   = simulationSizeGiven;
 
-    //GateExtractor();
-    //DFS(); // Finds the depth of the given circuit and classes the gates in order of reach where 0 means inputs and max means outputs
-    //for (int i = 0; i < simulationSize; i++){
-      //  Simulation(i);
-    //}
+    GateExtractor();
+    DFS(); // Finds the depth of the given circuit and classes the gates in order of reach where 0 means inputs and max means outputs
+    for (int i = 0; i < simulationSize; i++){
+        Simulation(i);
+    }
 }
 graphs::~graphs() {};
 void graphs::DFS() {
@@ -80,13 +80,16 @@ void graphs::Simulation(int simulationTurnToken) {
     while ( gateNumber != graphCheckMap.end()){ // until we reach the end of the map
         if (gatesMap[gateNumber->first]->waveRank == 1 && gateNumber->second == false){ //first wave: wave rank 1
         std::vector<int> inputVector(gatesMap[gateNumber->first]->inputSize,0); // initializing the input vector
-        int i = 0; // iterator for the input vector
-        auto inputIt = gatesMap[gateNumber->first]->inputValues.begin(); // iterator creation for gates map
-        while(inputIt != gatesMap[gateNumber->first]->inputValues.end()){// appending the input vector
-            inputVector[i] = inputIt->second[simulationTurnToken];
-            inputIt++;
-            i++;
+         // iterator for the input vector
+        for (int i = 0; i<gatesMap[gateNumber->first]->inputNames.size(); i++){
+            inputVector[i] = inputsMap[gatesMap[gateNumber->first]->inputNames[i]][simulationTurnToken];
         }
+        //auto inputIt = gatesMap[gateNumber->first]->inputNames.begin(); // iterator creation for gates map
+        //while(inputIt != gatesMap[gateNumber->first]->inputNames.end()){// appending the input vector
+        //    inputVector[i] = inputsMap[inputIt][simulationTurnToken];
+        //    inputIt++;
+        //    i++;
+        //}
         logicgates actualGate(gatesMap[gateNumber->first]->inputSize,gatesMap[gateNumber->first]->name,gatesMap[gateNumber->first]->type,inputVector,gatesMap[gateNumber->first]->outputName, gatesMap[gateNumber->first]->inputNames); //calculating
         gatesMap[gateNumber->first]->outputValues.push_back(actualGate.output); //indexing result
         outputsMap[gatesMap[gateNumber->first]->outputName][simulationTurnToken] = actualGate.output;// indexing result
@@ -108,6 +111,11 @@ void graphs::Simulation(int simulationTurnToken) {
         }
         gateNumber->second = true;
         gateNumber++;
+    }
+    auto reit = graphCheckMap.begin();
+    while(reit != graphCheckMap.end()){
+        graphCheckMap[reit->first] = false;
+        reit++;
     }
 }
 bool graphs::entryLevelGateVerifier(std::vector<std::string> gateInputNames) {

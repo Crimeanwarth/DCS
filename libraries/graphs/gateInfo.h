@@ -20,7 +20,6 @@ public:
     std::string type;
     std::vector<std::string> inputNames;
     std::string outputName;
-    std::map<std::string, std::vector<int>> inputValues;
     std::vector<int> outputValues;
     gateInfo( std::string nameGiven,
               std::string typeGiven,

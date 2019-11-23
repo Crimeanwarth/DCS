@@ -53,26 +53,38 @@ using namespace std;
         {
             cout << " Input name : " << inputNames[i] << " Value : " << inputs[i] << endl;
         }
-        cout << " Output Name : " << outputName << " Value : " << output << endl;
+        cout << " Output name : " << outputName << " Value : " << output << endl;
         cout << "\n\n" << endl;
     }
 
 void logicgates::outputCalculator() { // Calculates output
         if (inputSize > 1){
             if (type == "AND"){
-                for (int i = 0; i<inputSize-1; i++ )
+                for (int i = 0; i<inputSize; i++ )
                 {
-                    output = inputs[i] and inputs[i+1];
+                    if( i == 0 ) {
+                        output = inputs[i] and inputs[i + 1];
+                    } else {
+                        output = inputs[i] and output;
+                    }
                 }
             } else if (type == "OR") {
-                for (int i = 0; i<inputSize-1; i++ )
+                for (int i = 0; i<inputSize; i++ )
                 {
-                    output = inputs[i] or inputs[i+1];
+                    if( i == 0 ) {
+                        output = inputs[i] or inputs[i + 1];
+                    } else {
+                        output = inputs[i] or output;
+                    }
                 }
             } else if (type == "XOR") {
-                for (int i = 0; i<inputSize-1; i++ )
+                for (int i = 0; i<inputSize; i++ )
                 {
-                    output = inputs[i] xor inputs[i+1];
+                    if( i == 0 ) {
+                        output = inputs[i] xor inputs[i + 1];
+                    } else {
+                        output = inputs[i] xor output;
+                    }
                 }
             } else { // Error for alien gate
                 cout << "\033[1;31m ERROR: Unknown gate type! \033[0m\n" << endl;

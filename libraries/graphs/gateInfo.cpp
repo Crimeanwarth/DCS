@@ -16,6 +16,5 @@ gateInfo::gateInfo(  std::string nameGiven,
     type        = typeGiven;
     inputNames  = inputNamesGiven;
     outputName  = outputNameGiven;
-    //inputValues = inputValuesGiven;
     inputSize   = inputNamesGiven.size();
 }

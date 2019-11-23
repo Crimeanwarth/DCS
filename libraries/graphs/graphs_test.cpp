@@ -8,7 +8,6 @@
 
 graphs_test::graphs_test(){
     graphs test_circuit(outputPerGateMap_test,inputPerGateMap_test,inputsMap_test,outputsMap_test,adjancencyMap_test,nameTypeMap_test,gateNumber_test,inputNumber_test,outputNumber_test,simulationSize_test);
-    test_circuit.GateExtractor();
     // GateExtractor test
     auto it = test_circuit.gatesMap.begin();
     while (it != test_circuit.gatesMap.end()){
@@ -36,7 +35,7 @@ graphs_test::graphs_test(){
     }
 
     //DFS test
-    test_circuit.DFS();
+
     if (test_circuit.adjancencyMap["G1"] == 1) {
         cout << "\033[1;32m Test waveRank of G1 is PASS \033[0m\n" << endl;
     } else {
@@ -58,7 +57,7 @@ graphs_test::graphs_test(){
         cout << "\033[1;31m Test waveRank of is FAIL! \033[0m\n" << endl;
     }
 
-    test_circuit.Simulation(test_circuit.simulationSize);
+
 
 
 }
