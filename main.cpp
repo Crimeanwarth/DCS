@@ -6,6 +6,5 @@
 using namespace std;
 
 int main() {
-    graphs_test test;
     return 0;
 }
