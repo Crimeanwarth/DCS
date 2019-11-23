@@ -17,9 +17,11 @@ public:
     int output;
     std::string name;
     std::string type;
+    std::string outputName;
+    std::vector<std::string> inputNames;
 
     // Constructor
-    logicgates(int inputSizeGiven, std::string nameGiven, std::string typeGiven, std::vector<int> inputsGiven);
+    logicgates(int inputSizeGiven, std::string nameGiven, std::string typeGiven, std::vector<int> inputsGiven, std::string outputNameGiven, std::vector<std::string> inputNamesGiven);
     ~logicgates();
     // Methods
     void outputCalculator();

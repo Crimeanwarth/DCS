@@ -123,6 +123,87 @@ test/fast:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+libraries/graphs/gateInfo.o: libraries/graphs/gateInfo.cpp.o
+
+.PHONY : libraries/graphs/gateInfo.o
+
+# target to build an object file
+libraries/graphs/gateInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.o
+.PHONY : libraries/graphs/gateInfo.cpp.o
+
+libraries/graphs/gateInfo.i: libraries/graphs/gateInfo.cpp.i
+
+.PHONY : libraries/graphs/gateInfo.i
+
+# target to preprocess a source file
+libraries/graphs/gateInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.i
+.PHONY : libraries/graphs/gateInfo.cpp.i
+
+libraries/graphs/gateInfo.s: libraries/graphs/gateInfo.cpp.s
+
+.PHONY : libraries/graphs/gateInfo.s
+
+# target to generate assembly for a file
+libraries/graphs/gateInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libraries/graphs/gateInfo.cpp.s
+.PHONY : libraries/graphs/gateInfo.cpp.s
+
+libraries/graphs/graphs.o: libraries/graphs/graphs.cpp.o
+
+.PHONY : libraries/graphs/graphs.o
+
+# target to build an object file
+libraries/graphs/graphs.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libraries/graphs/graphs.cpp.o
+.PHONY : libraries/graphs/graphs.cpp.o
+
+libraries/graphs/graphs.i: libraries/graphs/graphs.cpp.i
+
+.PHONY : libraries/graphs/graphs.i
+
+# target to preprocess a source file
+libraries/graphs/graphs.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libraries/graphs/graphs.cpp.i
+.PHONY : libraries/graphs/graphs.cpp.i
+
+libraries/graphs/graphs.s: libraries/graphs/graphs.cpp.s
+
+.PHONY : libraries/graphs/graphs.s
+
+# target to generate assembly for a file
+libraries/graphs/graphs.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libraries/graphs/graphs.cpp.s
+.PHONY : libraries/graphs/graphs.cpp.s
+
+libraries/graphs/graphs_test.o: libraries/graphs/graphs_test.cpp.o
+
+.PHONY : libraries/graphs/graphs_test.o
+
+# target to build an object file
+libraries/graphs/graphs_test.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.o
+.PHONY : libraries/graphs/graphs_test.cpp.o
+
+libraries/graphs/graphs_test.i: libraries/graphs/graphs_test.cpp.i
+
+.PHONY : libraries/graphs/graphs_test.i
+
+# target to preprocess a source file
+libraries/graphs/graphs_test.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.i
+.PHONY : libraries/graphs/graphs_test.cpp.i
+
+libraries/graphs/graphs_test.s: libraries/graphs/graphs_test.cpp.s
+
+.PHONY : libraries/graphs/graphs_test.s
+
+# target to generate assembly for a file
+libraries/graphs/graphs_test.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.s
+.PHONY : libraries/graphs/graphs_test.cpp.s
+
 libraries/logicgates/logicgates.o: libraries/logicgates/logicgates.cpp.o
 
 .PHONY : libraries/logicgates/logicgates.o
@@ -213,6 +294,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... libraries/graphs/gateInfo.o"
+	@echo "... libraries/graphs/gateInfo.i"
+	@echo "... libraries/graphs/gateInfo.s"
+	@echo "... libraries/graphs/graphs.o"
+	@echo "... libraries/graphs/graphs.i"
+	@echo "... libraries/graphs/graphs.s"
+	@echo "... libraries/graphs/graphs_test.o"
+	@echo "... libraries/graphs/graphs_test.i"
+	@echo "... libraries/graphs/graphs_test.s"
 	@echo "... libraries/logicgates/logicgates.o"
 	@echo "... libraries/logicgates/logicgates.i"
 	@echo "... libraries/logicgates/logicgates.s"
