@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="test" targetName="test" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -9,7 +11,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a465302f-8545-4210-a277-f1cefddf5d7d" name="Default Changelist" comment="" />
+    <list default="true" id="a465302f-8545-4210-a277-f1cefddf5d7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/libraries/parser/log.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/parser/log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/parser/log_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/parser/log_test.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/parser/parser.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/parser/parser.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/parser/parser_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/parser/parser_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +33,7 @@
     <option name="formatViaClangd" value="false" />
     <option name="clangWarnings" value="-Wno-unused-variable,-Werror=implicit-function-declaration,-Wshadow,-Wno-shadow-field-in-constructor-modified,-Wno-shadow-ivar,-Wno-non-pod-varargs" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FavoritesManager">
     <favorites_list name="test" />
   </component>
@@ -72,7 +86,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="test">
+    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="test" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="test" RUN_TARGET_NAME="test">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -99,7 +113,7 @@
       <workItem from="1574381750776" duration="10978000" />
       <workItem from="1574411661714" duration="16430000" />
       <workItem from="1574471390448" duration="38000" />
-      <workItem from="1574471457128" duration="245000" />
+      <workItem from="1574471457128" duration="718000" />
     </task>
     <task id="LOCAL-00001" summary="DFS inner functions defined">
       <created>1574044238014</created>
