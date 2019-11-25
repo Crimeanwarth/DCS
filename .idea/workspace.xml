@@ -12,16 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a465302f-8545-4210-a277-f1cefddf5d7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/libraries/parser/log.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/parser/log.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/parser/log_test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/parser/log_test.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/parser/parser.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/parser/parser.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/parser/parser_test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/parser/parser_test.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/parser/parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/parser/parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +107,7 @@
       <workItem from="1574381750776" duration="10978000" />
       <workItem from="1574411661714" duration="16430000" />
       <workItem from="1574471390448" duration="38000" />
-      <workItem from="1574471457128" duration="718000" />
+      <workItem from="1574471457128" duration="13381000" />
     </task>
     <task id="LOCAL-00001" summary="DFS inner functions defined">
       <created>1574044238014</created>
@@ -192,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574470661705</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Initial commit">
+      <created>1574475802317</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1574475802317</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +225,8 @@
     <MESSAGE value=" EXC_BAD_ACCESS(code=1, adress=0x8) fixed" />
     <MESSAGE value="TODO : Logicgates class string input and output names" />
     <MESSAGE value="Bugs fixed &amp; tests past" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugs fixed &amp; tests past" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,10 +1,10 @@
 #include <iostream>
-#include "./libraries/logicgates/logicgates.h"
-#include "./libraries/logicgates/logicgates_test.h"
+#include "./libraries/parser/parser.h"
 #include "./libraries/graphs/graphs.h"
-#include "./libraries/graphs/graphs_test.h"
 using namespace std;
 
-int main() {
+int main(int argc, const char * argv[]) {
+
+
     return 0;
 }
