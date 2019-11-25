@@ -20,9 +20,9 @@ void parser::CircuitFileParser() {
     std::ifstream inputFileStream(circuitFileName);
     int count;
     inputFileStream>>count;
-    int i;
-    while(std::getline(inputFileStream, line,';'))
-    {
+    int i = 0;
+    while(i < count){
+        std::getline(inputFileStream, line,';');
         std::istringstream lineStream(line);
         if (line != ""){
           if (i == 0){ // INPUT case
@@ -58,11 +58,31 @@ void parser::CircuitFileParser() {
     gateNumberGiven = i - 1;
     inputNumberGiven = circuitInputNameVector.size();
     outputNumberGiven = circuitOutputName.size();
-
 }
 
 void parser::InputFileParser() {
     std::ifstream inputFileStream(inputFileName);
+    int count;
+    inputFileStream>>count;
+    int i = 0;
+    while (i < count){
+        std::getline(inputFileStream, line,' ');
+        std::istringstream lineStream(line);
+        if (line != " ") {
+            if (i == 0) {
+                simulationSizeGiven = stoi(line);
+                i++;
+            } else {
+                int it = 0;
+                while (it < inputNumberGiven) {
+                    if (it == 0) {
+                        inputsMapGiven.({gateOutputNameVector[it], stoi(line)/(10^(inputNumberGiven-1-it)) });
+                    }
+                    it++;
+                }
+            }
+        }
+    }
 }
 
 void parser::LineAnalyser() {
