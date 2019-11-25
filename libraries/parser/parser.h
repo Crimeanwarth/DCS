@@ -41,6 +41,7 @@ public:
     int inputNumberGiven;
     int outputNumberGiven;
     int simulationSizeGiven;
+    int inputValue;
 
     parser(std::string circuitFileNameGive, std::string inputFileNameGiven);
     ~parser();

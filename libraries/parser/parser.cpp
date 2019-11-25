@@ -63,10 +63,10 @@ void parser::CircuitFileParser() {
 void parser::InputFileParser() {
     std::ifstream inputFileStream(inputFileName);
     int count;
-    inputFileStream>>count;
+    inputFileStream >> count;
     int i = 0;
-    while (i < count){
-        std::getline(inputFileStream, line,' ');
+    while (i < count) {
+        std::getline(inputFileStream, line, ' ');
         std::istringstream lineStream(line);
         if (line != " ") {
             if (i == 0) {
@@ -74,12 +74,33 @@ void parser::InputFileParser() {
                 i++;
             } else {
                 int it = 0;
+                int vec = stoi(line);
                 while (it < inputNumberGiven) {
-                    if (it == 0) {
-                        inputsMapGiven.({gateOutputNameVector[it], stoi(line)/(10^(inputNumberGiven-1-it)) });
+                    if (it == 0 && count == 0) {
+                        inputsMapGiven.insert({gateInputNameVector[it], {vec / (10 ^ (inputNumberGiven - 1 - it))}});
+                        inputValue = vec / (10 ^ (inputNumberGiven - 1 - it));
+                        if (inputValue == 1) {
+                            vec = vec - 10 ^ (inputNumberGiven - 1 - it);
+                        } else if (inputValue != 0) {
+                            std::cout << "\033[1;31m ERROR: Non binary value is found! " << inputFileName << " : "
+                                      << "line ->" << i << " \033[0m\n" << std::endl;
+                            std::terminate();
+                        }
+                        it++;
+                    } else {
+                        inputsMapGiven[gateInputNameVector[it]].push_back(vec / (10 ^ (inputNumberGiven - 1 - it)));
+                        inputValue = vec / (10 ^ (inputNumberGiven - 1 - it));
+                        if (inputValue == 1) {
+                            vec = vec - 10 ^ (inputNumberGiven - 1 - it);
+                        } else if (inputValue != 0) {
+                            std::cout << "\033[1;31m ERROR: Non binary value is found! " << inputFileName << " : "
+                                      << "line ->" << i << " \033[0m\n" << std::endl;
+                            std::terminate();
+                        }
+                        it++;
                     }
-                    it++;
                 }
+                i++;
             }
         }
     }

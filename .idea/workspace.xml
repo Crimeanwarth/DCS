@@ -106,7 +106,7 @@
       <workItem from="1574381750776" duration="10978000" />
       <workItem from="1574411661714" duration="16430000" />
       <workItem from="1574471390448" duration="38000" />
-      <workItem from="1574471457128" duration="16954000" />
+      <workItem from="1574471457128" duration="24598000" />
     </task>
     <task id="LOCAL-00001" summary="DFS inner functions defined">
       <created>1574044238014</created>
@@ -199,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574644407455</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="InputFileParser function definition Half way">
+      <created>1574650244889</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1574650244889</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +240,8 @@
     <MESSAGE value="Bugs fixed &amp; tests past" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="CircuitFileParser function definition" />
-    <option name="LAST_COMMIT_MESSAGE" value="CircuitFileParser function definition" />
+    <MESSAGE value="InputFileParser function definition Half way" />
+    <option name="LAST_COMMIT_MESSAGE" value="InputFileParser function definition Half way" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
