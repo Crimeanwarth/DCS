@@ -12,15 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a465302f-8545-4210-a277-f1cefddf5d7d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DCS" beforeDir="false" afterPath="$PROJECT_DIR$/DCS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/graphs/graphs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/graphs/graphs.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/graphs/graphs_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/graphs/graphs_test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/logicgates/logicgates.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/logicgates/logicgates.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/parser/log.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/log.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/parser/log.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/log.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/parser/parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/parser/log_test.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/parser/log_test.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/parser/parser_test.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/parser/parser_test.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +127,7 @@
       <workItem from="1574381750776" duration="10978000" />
       <workItem from="1574411661714" duration="16430000" />
       <workItem from="1574471390448" duration="38000" />
-      <workItem from="1574471457128" duration="42438000" />
+      <workItem from="1574471457128" duration="43124000" />
     </task>
     <task id="LOCAL-00001" summary="DFS inner functions defined">
       <created>1574044238014</created>
@@ -246,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574732676350</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Main function &amp; log functions &amp; log.h for file opening">
+      <created>1574744092013</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1574744092013</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +294,7 @@
     <MESSAGE value="InputFileParser function definition" />
     <MESSAGE value="Init file and main defined" />
     <MESSAGE value="main function" />
-    <option name="LAST_COMMIT_MESSAGE" value="main function" />
+    <MESSAGE value="Main function &amp; log functions &amp; log.h for file opening" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main function &amp; log functions &amp; log.h for file opening" />
   </component>
 </project>
