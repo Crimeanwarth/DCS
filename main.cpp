@@ -9,7 +9,7 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
-//TODO1: Better organizing the log functions and gather them in to log.h
-//TODO2: Changing the way (optimizing) the input vectors handling in graphs.h and parser.h
-//TODO3: Optimize the code for scalability
-//TODO4: Make more modular functions
+//TODO: #1 Better organizing the log functions and gather them in to log.h
+//TODO: #2 Changing the way (optimizing) the input vectors handling in graphs.h and parser.h
+//TODO: #3 Optimize the code for scalability
+//TODO: #4 Make more modular functions
