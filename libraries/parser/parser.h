@@ -48,7 +48,7 @@ public:
     void CircuitFileParser();
     void InputFileParser();
     void Init();
-    void GetArg(int argc, char argv[]);
+    void GetArg(int argc, const char * argv[]);
 };
 
 

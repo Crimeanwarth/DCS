@@ -130,10 +130,13 @@ void parser::Init() {
     }
 }
 
-void parser::GetArg(int argc, char argv[]) {
+void parser::GetArg(int argc, const char * argv[]) {
+    const char *circuit = "-circuit";
+    const char *inputs = "-inputs";
+    std::string arg3 = reinterpret_cast<const char *>(argv[3]);
     if ( argc == 5 ){
-        if (argv[1] == '-circuit' || argv [3] == '-circuit'){
-            if (argv[1] == '-circuit'){
+        if (std::strcmp(argv [1], circuit) == 0 || std::strcmp(argv [3], circuit) == 0){
+            if (std::strcmp(argv [1], circuit) == 0 ){
                 circuitFileName = argv[2];
             } else {
                 circuitFileName = argv[4];
@@ -142,8 +145,8 @@ void parser::GetArg(int argc, char argv[]) {
             std::cerr << "\033[1;31m Error: Unknown type has been given! \033[0m\n" << std::endl;
             std::cerr << "Exemple : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
             std::terminate();
-        } if ( argv[1] == '-inputs' || argv[3] == '-inputs'){
-            if (argv[3] == '-inputs' ){
+        } if (std::strcmp(argv[1], inputs) == 0 || std::strcmp(argv[3], inputs) == 0 ){
+            if (std::strcmp(argv[3], inputs) == 0 ){
                 inputFileName = argv[4];
             } else {
                 inputFileName = argv[2];
