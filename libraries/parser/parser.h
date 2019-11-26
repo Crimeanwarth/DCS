@@ -42,12 +42,13 @@ public:
     int simulationSizeGiven; //
     int inputValue; //
 
-    parser(std::string circuitFileNameGive, std::string inputFileNameGiven);
+    parser(int argc, char argv[]);
     ~parser();
 
     void CircuitFileParser();
     void InputFileParser();
     void Init();
+    void GetArg(int argc, char argv[]);
 };
 
 

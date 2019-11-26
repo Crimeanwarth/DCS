@@ -5,10 +5,8 @@
 #include <fstream>
 #include "parser.h"
 
-parser::parser(std::string circuitFileNameGive, std::string inputFileNameGiven) {
-    circuitFileName = circuitFileNameGive;
-    inputFileName   = inputFileNameGiven;
-
+parser::parser(int argc, char argv[]){
+    GetArg(argc, argv);
     CircuitFileParser();
     InputFileParser();
     Init();
@@ -113,6 +111,36 @@ void parser::Init() {
     while (it != outputPerGateMapGiven.end()) {
         outputMapGiven.insert({it->second, outputs});
         it++;
+    }
+}
+
+void parser::GetArg(int argc, char argv[]) {
+    if ( argc == 5 ){
+        if (argv[1] == '-circuit' || argv [3] == '-circuit'){
+            if (argv[1] == '-circuit'){
+                circuitFileName = argv[2];
+            } else {
+                circuitFileName = argv[4];
+            }
+        } else {
+            std::cout << "\033[1;31m Error: Unknown type has been given! \033[0m\n" << std::endl;
+            std::cout << "Exemple : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
+            std::terminate();
+        } if ( argv[1] == '-inputs' || argv[3] == '-inputs'){
+            if (argv[3] == '-inputs' ){
+                inputFileName = argv[4];
+            } else {
+                inputFileName = argv[2];
+            }
+        } else {
+            std::cout << "\033[1;31m Error: Unknown type has been given! \033[0m\n" << std::endl;
+            std::cout << "Exemple : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
+            std::terminate();
+        }
+    } else {
+       std::cout << "\033[1;31m Error: Not enough arguments! \033[0m\n" << std::endl;
+       std::cout << "Exemple : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
+       std::terminate();
     }
 }
 
