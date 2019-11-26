@@ -3,3 +3,8 @@
 //
 
 #include "log.h"
+#include <iostream>
+log::log() {
+    std::freopen( "output.txt","w",stdout);
+    std::freopen( "error.txt", "w",stderr);
+}

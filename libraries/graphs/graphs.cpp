@@ -35,7 +35,32 @@ graphs::graphs(std::map<std::string, std::string> outputPerGateMapGiven,
         Simulation(i);
     }
 }
-graphs::~graphs() {};
+graphs::~graphs() {
+    cout << "Circuit input vectors per input : " << endl;
+    auto it = inputsMap.begin();
+    while (it != inputsMap.end()){
+       cout<< it->first << flush;
+       for (int i = 0; i < it->second.size(); i++ ){
+           if (i != it->second.size()-1) {
+               cout << it->second[i] << flush;
+           } else {
+               cout << " "<< it->second[i] << endl;
+           }
+       }
+    }
+    cout << "Circuit output vectors per output : " << endl;
+    auto itt = outputsMap.begin();
+    while (itt != outputsMap.end()){
+        cout<< itt->first << flush;
+        for (int i = 0; i < itt->second.size(); i++ ){
+            if (i != itt->second.size()-1) {
+                cout << itt->second[i] << flush;
+            } else {
+                cout << " "<< itt->second[i] << endl;
+            }
+        }
+    }
+};
 void graphs::DFS() {
     bool rangeControl = false;
     while(rangeControl == false) {

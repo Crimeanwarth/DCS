@@ -7,6 +7,11 @@
 
 
 class log {
+public:
+
+    log();
+    ~log();
+
 
 };
 

@@ -12,17 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a465302f-8545-4210-a277-f1cefddf5d7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DCS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DCS.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCS" beforeDir="false" afterPath="$PROJECT_DIR$/DCS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/graphs/graphs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/graphs/graphs.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/graphs/graphs_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/graphs/graphs_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/logicgates/logicgates.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/logicgates/logicgates.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/parser/log.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/log.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/parser/log.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/log.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/parser/parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/parser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/parser/parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/parser.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +125,7 @@
       <workItem from="1574381750776" duration="10978000" />
       <workItem from="1574411661714" duration="16430000" />
       <workItem from="1574471390448" duration="38000" />
-      <workItem from="1574471457128" duration="36322000" />
+      <workItem from="1574471457128" duration="42438000" />
     </task>
     <task id="LOCAL-00001" summary="DFS inner functions defined">
       <created>1574044238014</created>
@@ -241,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574727488070</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="main function">
+      <created>1574732676350</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1574732676350</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +284,7 @@
     <MESSAGE value="InputFileParser function definition Half way" />
     <MESSAGE value="InputFileParser function definition" />
     <MESSAGE value="Init file and main defined" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init file and main defined" />
+    <MESSAGE value="main function" />
+    <option name="LAST_COMMIT_MESSAGE" value="main function" />
   </component>
 </project>

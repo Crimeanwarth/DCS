@@ -4,15 +4,31 @@
 
 #include <fstream>
 #include "parser.h"
+#include "log.h"
 
 parser::parser(int argc, char argv[]){
     GetArg(argc, argv);
+    log logger();
     CircuitFileParser();
     InputFileParser();
     Init();
 }
 parser::~parser() {
-
+    std::cout << "Circuit Information" << std::endl;
+    std::cout << "Input Names : " << std::endl;
+    for (int i = 0; i<circuitInputNameVector.size(); i++){
+        std::cout << circuitInputNameVector[i] << std::endl;
+    }
+    std::cout << "Output Names : " << std::endl;
+    for (int i = 0; i<circuitOutputNameVector.size(); i++){
+        std::cout << circuitOutputNameVector[i] << std::endl;
+    }
+    std::cout << "Gate Names and Types : " << std::endl;
+    auto it = nameTypeMapGiven.begin();
+    while(it != nameTypeMapGiven.end()){
+        std::cout << it->first << " : " << it->second << std::endl;
+        it++;
+    }
 }
 
 void parser::CircuitFileParser() {
@@ -81,7 +97,7 @@ void parser::InputFileParser() {
                         if (inputValue == 1) {
                             vec = vec - 10 ^ (inputNumberGiven - 1 - it);
                         } else if (inputValue != 0) {
-                            std::cout << "\033[1;31m ERROR: Non binary value is found! " << inputFileName << " : "
+                            std::cerr << "\033[1;31m ERROR: Non binary value is found! " << inputFileName << " : "
                                       << "line ->" << i << " \033[0m\n" << std::endl;
                             std::terminate();
                         }
@@ -92,7 +108,7 @@ void parser::InputFileParser() {
                         if (inputValue == 1) {
                             vec = vec - 10 ^ (inputNumberGiven - 1 - it);
                         } else if (inputValue != 0) {
-                            std::cout << "\033[1;31m ERROR: Non binary value is found! " << inputFileName << " : "
+                            std::cerr << "\033[1;31m ERROR: Non binary value is found! " << inputFileName << " : "
                                       << "line ->" << i << " \033[0m\n" << std::endl;
                             std::terminate();
                         }
@@ -123,8 +139,8 @@ void parser::GetArg(int argc, char argv[]) {
                 circuitFileName = argv[4];
             }
         } else {
-            std::cout << "\033[1;31m Error: Unknown type has been given! \033[0m\n" << std::endl;
-            std::cout << "Exemple : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
+            std::cerr << "\033[1;31m Error: Unknown type has been given! \033[0m\n" << std::endl;
+            std::cerr << "Exemple : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
             std::terminate();
         } if ( argv[1] == '-inputs' || argv[3] == '-inputs'){
             if (argv[3] == '-inputs' ){
@@ -133,14 +149,13 @@ void parser::GetArg(int argc, char argv[]) {
                 inputFileName = argv[2];
             }
         } else {
-            std::cout << "\033[1;31m Error: Unknown type has been given! \033[0m\n" << std::endl;
-            std::cout << "Exemple : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
+            std::cerr << "\033[1;31m Error: Unknown type has been given! \033[0m\n" << std::endl;
+            std::cerr << "Exemple : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
             std::terminate();
         }
     } else {
-       std::cout << "\033[1;31m Error: Not enough arguments! \033[0m\n" << std::endl;
-       std::cout << "Exemple : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
+       std::cerr << "\033[1;31m Error: Not enough arguments! \033[0m\n" << std::endl;
+       std::cerr << "Exemple : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
        std::terminate();
     }
 }
-
