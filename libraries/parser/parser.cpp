@@ -6,7 +6,7 @@
 #include "parser.h"
 #include "log.h"
 
-parser::parser(int argc, char argv[]){
+parser::parser(int argc, const char * argv[]){
     GetArg(argc, argv);
     log logger();
     CircuitFileParser();

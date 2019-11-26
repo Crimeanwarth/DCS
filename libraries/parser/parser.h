@@ -42,7 +42,7 @@ public:
     int simulationSizeGiven; //
     int inputValue; //
 
-    parser(int argc, char argv[]);
+    parser(int argc, const char * argv[]);
     ~parser();
 
     void CircuitFileParser();
