@@ -24,31 +24,30 @@ public:
     std::string circuitFileName;
     std::string inputFileName;
 
-    std::vector<int> inputValuesVector;
     std::vector<std::string> circuitInputNameVector;
     std::vector<std::string> circuitOutputNameVector;
     std::vector<std::string> gateInputNameVector;
     std::vector<std::string> gateOutputNameVector;
 
-    std::map<std::string, std::string> outputPerGateMapGiven;
-    std::map<std::string, std::vector<std::string>> inputPerGateMapGiven;
-    std::map<std::string,std::vector<int>> inputsMapGiven;
-    std::map<std::string, std::vector<int>> outputMapGiven;
-    std::map<std::string, int> adjancencyMapGiven;
-    std::map<std::string,std::string> nameTypeMapGiven;
+    std::map<std::string, std::string> outputPerGateMapGiven; //
+    std::map<std::string, std::vector<std::string> > inputPerGateMapGiven; //
+    std::map<std::string,std::vector<int> > inputsMapGiven; //
+    std::map<std::string, std::vector<int> > outputMapGiven; //
+    std::map<std::string, int> adjancencyMapGiven; //
+    std::map<std::string,std::string> nameTypeMapGiven; //
 
-    int gateNumberGiven;
-    int inputNumberGiven;
-    int outputNumberGiven;
-    int simulationSizeGiven;
-    int inputValue;
+    int gateNumberGiven; //
+    int inputNumberGiven; //
+    int outputNumberGiven; //
+    int simulationSizeGiven; //
+    int inputValue; //
 
     parser(std::string circuitFileNameGive, std::string inputFileNameGiven);
     ~parser();
 
     void CircuitFileParser();
     void InputFileParser();
-    void LineAnalyser();
+    void Init();
 };
 
 

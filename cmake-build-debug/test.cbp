@@ -110,6 +110,30 @@
 		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates_test.h">
 			<Option target="test"/>
 		</Unit>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/log.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/log.h">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/log_test.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/log_test.h">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser.h">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser_test.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser_test.h">
+			<Option target="test"/>
+		</Unit>
 		<Unit filename="/Users/deniztohumcu/Desktop/DCS/main.cpp">
 			<Option target="test"/>
 		</Unit>

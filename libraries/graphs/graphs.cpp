@@ -11,9 +11,9 @@
 #include "gateInfo.h"
 
 graphs::graphs(std::map<std::string, std::string> outputPerGateMapGiven,
-               std::map<std::string, std::vector<string>> inputPerGateMapGiven,
-               std::map<std::string, std::vector<int>> inputsMapGiven,
-               std::map<std::string, std::vector<int>> outputMapGiven,
+               std::map<std::string, std::vector<string> > inputPerGateMapGiven,
+               std::map<std::string, std::vector<int> > inputsMapGiven,
+               std::map<std::string, std::vector<int> > outputMapGiven,
                std::map<std::string, int> adjancencyMapGiven,
                std::map<std::string, std::string> nameTypeMapGiven, int gateNumberGiven, int inputNumberGiven,
                int outputNumberGiven, int simulationSizeGiven) {

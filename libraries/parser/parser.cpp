@@ -11,6 +11,7 @@ parser::parser(std::string circuitFileNameGive, std::string inputFileNameGiven) 
 
     CircuitFileParser();
     InputFileParser();
+    Init();
 }
 parser::~parser() {
 
@@ -106,8 +107,12 @@ void parser::InputFileParser() {
     }
 }
 
-void parser::LineAnalyser() {
-
+void parser::Init() {
+    std::vector<int> outputs(simulationSizeGiven, 0);
+    auto it = outputPerGateMapGiven.begin();
+    while (it != outputPerGateMapGiven.end()) {
+        outputMapGiven.insert({it->second, outputs});
+        it++;
+    }
 }
-
 

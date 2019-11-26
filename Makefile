@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.15.5/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /usr/local/Cellar/cmake/3.15.5/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/deniztohumcu/Desktop/DCS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/deniztohumcu/Desktop/DCS/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/deniztohumcu/Desktop/DCS
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/deniztohumcu/Desktop/DCS/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.15.5/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/local/Cellar/cmake/3.15.5/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles /Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deniztohumcu/Desktop/DCS/CMakeFiles /Users/deniztohumcu/Desktop/DCS/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deniztohumcu/Desktop/DCS/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DCS
+# Target rules for targets named main.cpp
 
 # Build rule for target.
-DCS: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DCS
-.PHONY : DCS
+main.cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main.cpp
+.PHONY : main.cpp
 
 # fast build rule for target.
-DCS/fast:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/build
-.PHONY : DCS/fast
+main.cpp/fast:
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/build
+.PHONY : main.cpp/fast
 
 libraries/graphs/gateInfo.o: libraries/graphs/gateInfo.cpp.o
 
@@ -129,7 +129,7 @@ libraries/graphs/gateInfo.o: libraries/graphs/gateInfo.cpp.o
 
 # target to build an object file
 libraries/graphs/gateInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/graphs/gateInfo.cpp.o
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/graphs/gateInfo.cpp.o
 .PHONY : libraries/graphs/gateInfo.cpp.o
 
 libraries/graphs/gateInfo.i: libraries/graphs/gateInfo.cpp.i
@@ -138,7 +138,7 @@ libraries/graphs/gateInfo.i: libraries/graphs/gateInfo.cpp.i
 
 # target to preprocess a source file
 libraries/graphs/gateInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/graphs/gateInfo.cpp.i
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/graphs/gateInfo.cpp.i
 .PHONY : libraries/graphs/gateInfo.cpp.i
 
 libraries/graphs/gateInfo.s: libraries/graphs/gateInfo.cpp.s
@@ -147,7 +147,7 @@ libraries/graphs/gateInfo.s: libraries/graphs/gateInfo.cpp.s
 
 # target to generate assembly for a file
 libraries/graphs/gateInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/graphs/gateInfo.cpp.s
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/graphs/gateInfo.cpp.s
 .PHONY : libraries/graphs/gateInfo.cpp.s
 
 libraries/graphs/graphs.o: libraries/graphs/graphs.cpp.o
@@ -156,7 +156,7 @@ libraries/graphs/graphs.o: libraries/graphs/graphs.cpp.o
 
 # target to build an object file
 libraries/graphs/graphs.cpp.o:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/graphs/graphs.cpp.o
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/graphs/graphs.cpp.o
 .PHONY : libraries/graphs/graphs.cpp.o
 
 libraries/graphs/graphs.i: libraries/graphs/graphs.cpp.i
@@ -165,7 +165,7 @@ libraries/graphs/graphs.i: libraries/graphs/graphs.cpp.i
 
 # target to preprocess a source file
 libraries/graphs/graphs.cpp.i:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/graphs/graphs.cpp.i
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/graphs/graphs.cpp.i
 .PHONY : libraries/graphs/graphs.cpp.i
 
 libraries/graphs/graphs.s: libraries/graphs/graphs.cpp.s
@@ -174,7 +174,7 @@ libraries/graphs/graphs.s: libraries/graphs/graphs.cpp.s
 
 # target to generate assembly for a file
 libraries/graphs/graphs.cpp.s:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/graphs/graphs.cpp.s
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/graphs/graphs.cpp.s
 .PHONY : libraries/graphs/graphs.cpp.s
 
 libraries/graphs/graphs_test.o: libraries/graphs/graphs_test.cpp.o
@@ -183,7 +183,7 @@ libraries/graphs/graphs_test.o: libraries/graphs/graphs_test.cpp.o
 
 # target to build an object file
 libraries/graphs/graphs_test.cpp.o:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/graphs/graphs_test.cpp.o
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/graphs/graphs_test.cpp.o
 .PHONY : libraries/graphs/graphs_test.cpp.o
 
 libraries/graphs/graphs_test.i: libraries/graphs/graphs_test.cpp.i
@@ -192,7 +192,7 @@ libraries/graphs/graphs_test.i: libraries/graphs/graphs_test.cpp.i
 
 # target to preprocess a source file
 libraries/graphs/graphs_test.cpp.i:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/graphs/graphs_test.cpp.i
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/graphs/graphs_test.cpp.i
 .PHONY : libraries/graphs/graphs_test.cpp.i
 
 libraries/graphs/graphs_test.s: libraries/graphs/graphs_test.cpp.s
@@ -201,7 +201,7 @@ libraries/graphs/graphs_test.s: libraries/graphs/graphs_test.cpp.s
 
 # target to generate assembly for a file
 libraries/graphs/graphs_test.cpp.s:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/graphs/graphs_test.cpp.s
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/graphs/graphs_test.cpp.s
 .PHONY : libraries/graphs/graphs_test.cpp.s
 
 libraries/logicgates/logicgates.o: libraries/logicgates/logicgates.cpp.o
@@ -210,7 +210,7 @@ libraries/logicgates/logicgates.o: libraries/logicgates/logicgates.cpp.o
 
 # target to build an object file
 libraries/logicgates/logicgates.cpp.o:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/logicgates/logicgates.cpp.o
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/logicgates/logicgates.cpp.o
 .PHONY : libraries/logicgates/logicgates.cpp.o
 
 libraries/logicgates/logicgates.i: libraries/logicgates/logicgates.cpp.i
@@ -219,7 +219,7 @@ libraries/logicgates/logicgates.i: libraries/logicgates/logicgates.cpp.i
 
 # target to preprocess a source file
 libraries/logicgates/logicgates.cpp.i:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/logicgates/logicgates.cpp.i
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/logicgates/logicgates.cpp.i
 .PHONY : libraries/logicgates/logicgates.cpp.i
 
 libraries/logicgates/logicgates.s: libraries/logicgates/logicgates.cpp.s
@@ -228,7 +228,7 @@ libraries/logicgates/logicgates.s: libraries/logicgates/logicgates.cpp.s
 
 # target to generate assembly for a file
 libraries/logicgates/logicgates.cpp.s:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/logicgates/logicgates.cpp.s
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/logicgates/logicgates.cpp.s
 .PHONY : libraries/logicgates/logicgates.cpp.s
 
 libraries/logicgates/logicgates_test.o: libraries/logicgates/logicgates_test.cpp.o
@@ -237,7 +237,7 @@ libraries/logicgates/logicgates_test.o: libraries/logicgates/logicgates_test.cpp
 
 # target to build an object file
 libraries/logicgates/logicgates_test.cpp.o:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/logicgates/logicgates_test.cpp.o
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/logicgates/logicgates_test.cpp.o
 .PHONY : libraries/logicgates/logicgates_test.cpp.o
 
 libraries/logicgates/logicgates_test.i: libraries/logicgates/logicgates_test.cpp.i
@@ -246,7 +246,7 @@ libraries/logicgates/logicgates_test.i: libraries/logicgates/logicgates_test.cpp
 
 # target to preprocess a source file
 libraries/logicgates/logicgates_test.cpp.i:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/logicgates/logicgates_test.cpp.i
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/logicgates/logicgates_test.cpp.i
 .PHONY : libraries/logicgates/logicgates_test.cpp.i
 
 libraries/logicgates/logicgates_test.s: libraries/logicgates/logicgates_test.cpp.s
@@ -255,7 +255,7 @@ libraries/logicgates/logicgates_test.s: libraries/logicgates/logicgates_test.cpp
 
 # target to generate assembly for a file
 libraries/logicgates/logicgates_test.cpp.s:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/logicgates/logicgates_test.cpp.s
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/logicgates/logicgates_test.cpp.s
 .PHONY : libraries/logicgates/logicgates_test.cpp.s
 
 libraries/parser/log.o: libraries/parser/log.cpp.o
@@ -264,7 +264,7 @@ libraries/parser/log.o: libraries/parser/log.cpp.o
 
 # target to build an object file
 libraries/parser/log.cpp.o:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/log.cpp.o
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/parser/log.cpp.o
 .PHONY : libraries/parser/log.cpp.o
 
 libraries/parser/log.i: libraries/parser/log.cpp.i
@@ -273,7 +273,7 @@ libraries/parser/log.i: libraries/parser/log.cpp.i
 
 # target to preprocess a source file
 libraries/parser/log.cpp.i:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/log.cpp.i
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/parser/log.cpp.i
 .PHONY : libraries/parser/log.cpp.i
 
 libraries/parser/log.s: libraries/parser/log.cpp.s
@@ -282,7 +282,7 @@ libraries/parser/log.s: libraries/parser/log.cpp.s
 
 # target to generate assembly for a file
 libraries/parser/log.cpp.s:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/log.cpp.s
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/parser/log.cpp.s
 .PHONY : libraries/parser/log.cpp.s
 
 libraries/parser/log_test.o: libraries/parser/log_test.cpp.o
@@ -291,7 +291,7 @@ libraries/parser/log_test.o: libraries/parser/log_test.cpp.o
 
 # target to build an object file
 libraries/parser/log_test.cpp.o:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/log_test.cpp.o
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/parser/log_test.cpp.o
 .PHONY : libraries/parser/log_test.cpp.o
 
 libraries/parser/log_test.i: libraries/parser/log_test.cpp.i
@@ -300,7 +300,7 @@ libraries/parser/log_test.i: libraries/parser/log_test.cpp.i
 
 # target to preprocess a source file
 libraries/parser/log_test.cpp.i:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/log_test.cpp.i
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/parser/log_test.cpp.i
 .PHONY : libraries/parser/log_test.cpp.i
 
 libraries/parser/log_test.s: libraries/parser/log_test.cpp.s
@@ -309,7 +309,7 @@ libraries/parser/log_test.s: libraries/parser/log_test.cpp.s
 
 # target to generate assembly for a file
 libraries/parser/log_test.cpp.s:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/log_test.cpp.s
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/parser/log_test.cpp.s
 .PHONY : libraries/parser/log_test.cpp.s
 
 libraries/parser/parser.o: libraries/parser/parser.cpp.o
@@ -318,7 +318,7 @@ libraries/parser/parser.o: libraries/parser/parser.cpp.o
 
 # target to build an object file
 libraries/parser/parser.cpp.o:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/parser.cpp.o
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/parser/parser.cpp.o
 .PHONY : libraries/parser/parser.cpp.o
 
 libraries/parser/parser.i: libraries/parser/parser.cpp.i
@@ -327,7 +327,7 @@ libraries/parser/parser.i: libraries/parser/parser.cpp.i
 
 # target to preprocess a source file
 libraries/parser/parser.cpp.i:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/parser.cpp.i
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/parser/parser.cpp.i
 .PHONY : libraries/parser/parser.cpp.i
 
 libraries/parser/parser.s: libraries/parser/parser.cpp.s
@@ -336,7 +336,7 @@ libraries/parser/parser.s: libraries/parser/parser.cpp.s
 
 # target to generate assembly for a file
 libraries/parser/parser.cpp.s:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/parser.cpp.s
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/parser/parser.cpp.s
 .PHONY : libraries/parser/parser.cpp.s
 
 libraries/parser/parser_test.o: libraries/parser/parser_test.cpp.o
@@ -345,7 +345,7 @@ libraries/parser/parser_test.o: libraries/parser/parser_test.cpp.o
 
 # target to build an object file
 libraries/parser/parser_test.cpp.o:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/parser_test.cpp.o
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/parser/parser_test.cpp.o
 .PHONY : libraries/parser/parser_test.cpp.o
 
 libraries/parser/parser_test.i: libraries/parser/parser_test.cpp.i
@@ -354,7 +354,7 @@ libraries/parser/parser_test.i: libraries/parser/parser_test.cpp.i
 
 # target to preprocess a source file
 libraries/parser/parser_test.cpp.i:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/parser_test.cpp.i
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/parser/parser_test.cpp.i
 .PHONY : libraries/parser/parser_test.cpp.i
 
 libraries/parser/parser_test.s: libraries/parser/parser_test.cpp.s
@@ -363,35 +363,8 @@ libraries/parser/parser_test.s: libraries/parser/parser_test.cpp.s
 
 # target to generate assembly for a file
 libraries/parser/parser_test.cpp.s:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/parser_test.cpp.s
+	$(MAKE) -f CMakeFiles/main.cpp.dir/build.make CMakeFiles/main.cpp.dir/libraries/parser/parser_test.cpp.s
 .PHONY : libraries/parser/parser_test.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -401,7 +374,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... DCS"
+	@echo "... main.cpp"
 	@echo "... libraries/graphs/gateInfo.o"
 	@echo "... libraries/graphs/gateInfo.i"
 	@echo "... libraries/graphs/gateInfo.s"
@@ -429,9 +402,6 @@ help:
 	@echo "... libraries/parser/parser_test.o"
 	@echo "... libraries/parser/parser_test.i"
 	@echo "... libraries/parser/parser_test.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 

@@ -16,6 +16,22 @@ string
 map
 -
 
+/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.cpp
+graphs.h
+/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.h
+iostream
+-
+vector
+-
+map
+-
+string
+-
+../logicgates/logicgates.h
+/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.h
+gateInfo.h
+/Users/deniztohumcu/Desktop/DCS/libraries/graphs/gateInfo.h
+
 /Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.h
 iostream
 -
@@ -58,23 +74,29 @@ vector
 string
 -
 
-/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates_test.h
+/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser.cpp
+fstream
+-
+parser.h
+/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser.h
+
+/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser.h
 iostream
+-
+map
 -
 vector
 -
 string
 -
+sstream
+-
 
 /Users/deniztohumcu/Desktop/DCS/main.cpp
 iostream
 -
-./libraries/logicgates/logicgates.h
-/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.h
-./libraries/logicgates/logicgates_test.h
-/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates_test.h
+./libraries/parser/parser.h
+/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser.h
 ./libraries/graphs/graphs.h
 /Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.h
-./libraries/graphs/graphs_test.h
-/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs_test.h
 

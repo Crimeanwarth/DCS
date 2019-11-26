@@ -22,10 +22,21 @@ CMakeFiles/test.dir/libraries/logicgates/logicgates_test.cpp.o
  /Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.h
  /Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates_test.cpp
  /Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates_test.h
+CMakeFiles/test.dir/libraries/parser/log.cpp.o
+ /Users/deniztohumcu/Desktop/DCS/libraries/parser/log.cpp
+ /Users/deniztohumcu/Desktop/DCS/libraries/parser/log.h
+CMakeFiles/test.dir/libraries/parser/log_test.cpp.o
+ /Users/deniztohumcu/Desktop/DCS/libraries/parser/log_test.cpp
+ /Users/deniztohumcu/Desktop/DCS/libraries/parser/log_test.h
+CMakeFiles/test.dir/libraries/parser/parser.cpp.o
+ /Users/deniztohumcu/Desktop/DCS/libraries/parser/parser.cpp
+ /Users/deniztohumcu/Desktop/DCS/libraries/parser/parser.h
+CMakeFiles/test.dir/libraries/parser/parser_test.cpp.o
+ /Users/deniztohumcu/Desktop/DCS/libraries/parser/parser_test.cpp
+ /Users/deniztohumcu/Desktop/DCS/libraries/parser/parser_test.h
 CMakeFiles/test.dir/main.cpp.o
  /Users/deniztohumcu/Desktop/DCS/libraries/graphs/gateInfo.h
  /Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.h
- /Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs_test.h
  /Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.h
- /Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates_test.h
+ /Users/deniztohumcu/Desktop/DCS/libraries/parser/parser.h
  /Users/deniztohumcu/Desktop/DCS/main.cpp
