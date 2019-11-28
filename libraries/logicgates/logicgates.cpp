@@ -12,7 +12,7 @@ using namespace std;
     //Constructor and Destructor
     logicgates::logicgates (int inputSizeGiven,string nameGiven, string typeGiven, vector<int> inputsGiven, std::string outputNameGiven, std::vector<std::string> inputNamesGiven){
         if (inputSizeGiven == 0){
-            cout << "ERROR: Minimum input size is 1 " << endl;
+            cerr << "ERROR: Minimum input size is 1 " << endl;
             exit(-1);
         }else if (inputSizeGiven == 1){
             inputs.push_back(0); //Appending to the inputs vector
@@ -24,7 +24,7 @@ using namespace std;
             if (inputs.size() == inputsGiven.size()){ //checks if the array sizes are equal in order to prevent segmentation error.
                 inputs = inputsGiven;
             }else{
-                cout << "\033[1;31m ERROR: Segmentation error : your input size is not the same as the numbers of inputs that are given! \033[0m\n" << endl;
+                cerr << "\033[1;31m ERROR: Segmentation error : your input size is not the same as the numbers of inputs that are given! \033[0m\n" << endl;
                 terminate();
             }
             outputCalculator();
@@ -40,26 +40,24 @@ using namespace std;
             if (inputs.size() == inputsGiven.size()){ //checks if the array sizes are equal in order to prevent segmentation error.
                 inputs = inputsGiven;
             }else{
-                cout << "\033[1;31m ERROR: Segmentation error : your input size is not the same as the numbers of inputs that are given! \033[0m\n" << endl;
+                cerr << "\033[1;31m ERROR: Segmentation error : your input size is not the same as the numbers of inputs that are given! \033[0m\n" << endl;
                 terminate();
             }
             outputCalculator();
         }
     }
     logicgates::~logicgates() {
-        cout << "\n\n" << endl;
         cout << "Name: " << name << " TYPE: " << type << " Input Size: " << inputSize << endl;
         for (int i = 0; i<inputSize; i++)
         {
             cout << " Input name : " << inputNames[i] << " Value : " << inputs[i] << endl;
         }
         cout << " Output name : " << outputName << " Value : " << output << endl;
-        cout << "\n\n" << endl;
     }
 
 void logicgates::outputCalculator() { // Calculates output
         if (inputSize > 1){
-            if (type == "AND"){
+            if (type == "and"){
                 for (int i = 0; i<inputSize; i++ )
                 {
                     if( i == 0 ) {
@@ -68,7 +66,7 @@ void logicgates::outputCalculator() { // Calculates output
                         output = inputs[i] and output;
                     }
                 }
-            } else if (type == "OR") {
+            } else if (type == "or") {
                 for (int i = 0; i<inputSize; i++ )
                 {
                     if( i == 0 ) {
@@ -77,7 +75,7 @@ void logicgates::outputCalculator() { // Calculates output
                         output = inputs[i] or output;
                     }
                 }
-            } else if (type == "XOR") {
+            } else if (type == "xor") {
                 for (int i = 0; i<inputSize; i++ )
                 {
                     if( i == 0 ) {
@@ -87,18 +85,18 @@ void logicgates::outputCalculator() { // Calculates output
                     }
                 }
             } else { // Error for alien gate
-                cout << "\033[1;31m ERROR: Unknown gate type! \033[0m\n" << endl;
+                cerr << "\033[1;31m ERROR: Unknown gate type! \033[0m\n" << endl;
                 terminate();
             }
         } else if (inputSize == 1) {
-            if (type == "INV"){
+            if (type == "not"){
                 output = !inputs[0];
             } else { // Inverters size error
-                cout << "\033[1;31m ERROR: Inverters can't have more then one input! \033[0m\n" << endl;
+                cerr << "\033[1;31m ERROR: Inverters can't have more then one input! \033[0m\n" << endl;
                 terminate();
             }
         } else { // Impossible size error
-            cout << "\033[1;31m ERROR: Input size not possible! \033[0m\n" << endl;
+            cerr << "\033[1;31m ERROR: Input size not possible! \033[0m\n" << endl;
             terminate();
         }
 }

@@ -19,7 +19,7 @@ graphs_test::graphs_test(){
             cout << "\033[1;31m Test waveRank of "<< it->first << "is FAIL! \033[0m\n" << endl;
         }
         if (it->second->inputNames == inputPerGateMap_test[it->first]) {
-            cout << "\033[1;32m Test inputNames of "<< it->first <<" is PASS \033[0m\n" << endl;
+            cerr << "\033[1;32m Test inputNames of "<< it->first <<" is PASS \033[0m\n" << endl;
         } else {
             cout << "\033[1;31m Test inputNames of "<< it->first << "is FAIL! \033[0m\n" << endl;
         }

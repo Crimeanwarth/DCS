@@ -9,6 +9,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs_test.cpp" "/Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles/test.dir/libraries/graphs/graphs_test.cpp.o"
   "/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.cpp" "/Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles/test.dir/libraries/logicgates/logicgates.cpp.o"
   "/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates_test.cpp" "/Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles/test.dir/libraries/logicgates/logicgates_test.cpp.o"
+  "/Users/deniztohumcu/Desktop/DCS/libraries/parser/log.cpp" "/Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles/test.dir/libraries/parser/log.cpp.o"
+  "/Users/deniztohumcu/Desktop/DCS/libraries/parser/log_test.cpp" "/Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles/test.dir/libraries/parser/log_test.cpp.o"
+  "/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser.cpp" "/Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles/test.dir/libraries/parser/parser.cpp.o"
+  "/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser_test.cpp" "/Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles/test.dir/libraries/parser/parser_test.cpp.o"
   "/Users/deniztohumcu/Desktop/DCS/main.cpp" "/Users/deniztohumcu/Desktop/DCS/cmake-build-debug/CMakeFiles/test.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

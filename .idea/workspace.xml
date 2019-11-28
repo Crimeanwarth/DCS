@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="DCS" targetName="DCS" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -9,7 +11,24 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a465302f-8545-4210-a277-f1cefddf5d7d" name="Default Changelist" comment="" />
+    <list default="true" id="a465302f-8545-4210-a277-f1cefddf5d7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/error.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/parser/parser_test.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/parser/parser_test.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCS" beforeDir="false" afterPath="$PROJECT_DIR$/DCS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DCS.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/DCS.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/graphs/graphs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/graphs/graphs.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/logicgates/logicgates.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/logicgates/logicgates.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/parser/log.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/parser/log.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/parser/parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/parser/parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +39,7 @@
     <option name="formatViaClangd" value="false" />
     <option name="clangWarnings" value="-Wno-unused-variable,-Werror=implicit-function-declaration,-Wshadow,-Wno-shadow-field-in-constructor-modified,-Wno-shadow-ivar,-Wno-non-pod-varargs" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FavoritesManager">
     <favorites_list name="test" />
   </component>
@@ -40,8 +60,11 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectId" id="1TOdOvjFOyeqaz5mN1ziSZj5NJK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -56,6 +79,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/libraries/graphs" />
     </key>
   </component>
@@ -71,12 +95,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="test">
+  <component name="RunManager" selected="CMake Application.DCS">
+    <configuration name="DCS" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DCS" TARGET_NAME="DCS" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DCS" RUN_TARGET_NAME="DCS">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DCS" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DCS" RUN_TARGET_NAME="test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.test" />
+      <item itemvalue="CMake Application.DCS" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -99,7 +132,11 @@
       <workItem from="1574381750776" duration="10978000" />
       <workItem from="1574411661714" duration="16430000" />
       <workItem from="1574471390448" duration="38000" />
-      <workItem from="1574471457128" duration="245000" />
+      <workItem from="1574471457128" duration="51978000" />
+      <workItem from="1574805712302" duration="2300000" />
+      <workItem from="1574878552132" duration="6878000" />
+      <workItem from="1546302092998" duration="1590000" />
+      <workItem from="1574969980765" duration="8475000" />
     </task>
     <task id="LOCAL-00001" summary="DFS inner functions defined">
       <created>1574044238014</created>
@@ -178,7 +215,98 @@
       <option name="project" value="LOCAL" />
       <updated>1574470661705</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Initial commit">
+      <created>1574475802317</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1574475802317</updated>
+    </task>
+    <task id="LOCAL-00013" summary="CircuitFileParser function definition">
+      <created>1574644407455</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1574644407455</updated>
+    </task>
+    <task id="LOCAL-00014" summary="InputFileParser function definition Half way">
+      <created>1574650244889</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1574650244889</updated>
+    </task>
+    <task id="LOCAL-00015" summary="InputFileParser function definition">
+      <created>1574716085362</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1574716085363</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Init file and main defined">
+      <created>1574727488070</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1574727488070</updated>
+    </task>
+    <task id="LOCAL-00017" summary="main function">
+      <created>1574732676350</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1574732676350</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Main function &amp; log functions &amp; log.h for file opening">
+      <created>1574744092013</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1574744092013</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Main function">
+      <created>1574744745637</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1574744745637</updated>
+    </task>
+    <task id="LOCAL-00020" summary="TODOs">
+      <created>1574745176179</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1574745176179</updated>
+    </task>
+    <task id="LOCAL-00021" summary="TODOs">
+      <created>1574745240008</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1574745240008</updated>
+    </task>
+    <task id="LOCAL-00022" summary="debugging parser">
+      <created>1574747611988</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1574747611988</updated>
+    </task>
+    <task id="LOCAL-00023" summary="debugging parser">
+      <created>1574747924489</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1574747924489</updated>
+    </task>
+    <task id="LOCAL-00024" summary="debugging parser">
+      <created>1574747971010</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1574747971010</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +327,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="DFS inner functions defined" />
     <MESSAGE value="Bugs fixed &amp; Simulation func is defined" />
     <MESSAGE value="Tests are created" />
@@ -210,20 +339,40 @@
     <MESSAGE value=" EXC_BAD_ACCESS(code=1, adress=0x8) fixed" />
     <MESSAGE value="TODO : Logicgates class string input and output names" />
     <MESSAGE value="Bugs fixed &amp; tests past" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugs fixed &amp; tests past" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="CircuitFileParser function definition" />
+    <MESSAGE value="InputFileParser function definition Half way" />
+    <MESSAGE value="InputFileParser function definition" />
+    <MESSAGE value="Init file and main defined" />
+    <MESSAGE value="main function" />
+    <MESSAGE value="Main function &amp; log functions &amp; log.h for file opening" />
+    <MESSAGE value="Main function" />
+    <MESSAGE value="TODOs" />
+    <MESSAGE value="debugging parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugging parser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/libraries/graphs/graphs.cpp</url>
-          <line>33</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/libraries/graphs/graphs.h</url>
+          <line>52</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/libraries/graphs/graphs.cpp</url>
-          <line>87</line>
-          <option name="timeStamp" value="21" />
+          <line>67</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/libraries/graphs/graphs.cpp</url>
+          <line>100</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/libraries/parser/parser.cpp</url>
+          <line>86</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

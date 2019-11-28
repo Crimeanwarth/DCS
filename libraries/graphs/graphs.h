@@ -28,9 +28,9 @@ public:
     std::vector<std::string> typeVector;//name::type
    */
     std::map<std::string, std::string> outputPerGateMap;
-    std::map<std::string, std::vector<string>> inputPerGateMap;
-    std::map<std::string, std::vector<int>> inputsMap;
-    std::map<std::string, std::vector<int>> outputsMap;
+    std::map<std::string, std::vector<string> > inputPerGateMap;
+    std::map<std::string, std::vector<int> > inputsMap;
+    std::map<std::string, std::vector<int> > outputsMap;
     std::map<std::string, int> adjancencyMap;
     std::map<std::string, bool> graphCheckMap;
     std::map<std::string, std::string> nameTypeMap;
@@ -42,9 +42,9 @@ public:
     int simulationSize;
     // Constructor
     graphs( std::map<std::string, std::string> outputPerGateMapGiven,
-            std::map<std::string, std::vector<string>> inputPerGateMapGiven,
-            std::map<std::string,std::vector<int>> inputsMapGiven,
-            std::map<std::string, std::vector<int>> outputMapGiven,
+            std::map<std::string, std::vector<string> > inputPerGateMapGiven,
+            std::map<std::string,std::vector<int> > inputsMapGiven,
+            std::map<std::string, std::vector<int> > outputMapGiven,
             std::map<std::string, int> adjancencyMapGiven,
             std::map<std::string,std::string> nameTypeMapGiven,
             int gateNumberGiven, int inputNumberGiven, int outputNumberGiven, int simulationSizeGiven);
