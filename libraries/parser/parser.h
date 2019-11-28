@@ -4,12 +4,14 @@
 
 #ifndef TEST_PARSER_H
 #define TEST_PARSER_H
-
 #include <iostream>
 #include <map>
 #include <vector>
 #include <string>
 #include <sstream>
+#include <fstream>
+#include <iomanip>
+#include <cmath>
 
 class parser {
 public:

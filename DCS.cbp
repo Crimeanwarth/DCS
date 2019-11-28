@@ -78,46 +78,16 @@
 		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs.h">
 			<Option target="DCS"/>
 		</Unit>
-		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs_test.cpp">
-			<Option target="DCS"/>
-		</Unit>
-		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/graphs/graphs_test.h">
-			<Option target="DCS"/>
-		</Unit>
 		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.cpp">
 			<Option target="DCS"/>
 		</Unit>
 		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates.h">
 			<Option target="DCS"/>
 		</Unit>
-		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates_test.cpp">
-			<Option target="DCS"/>
-		</Unit>
-		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/logicgates/logicgates_test.h">
-			<Option target="DCS"/>
-		</Unit>
-		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/log.cpp">
-			<Option target="DCS"/>
-		</Unit>
-		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/log.h">
-			<Option target="DCS"/>
-		</Unit>
-		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/log_test.cpp">
-			<Option target="DCS"/>
-		</Unit>
-		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/log_test.h">
-			<Option target="DCS"/>
-		</Unit>
 		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser.cpp">
 			<Option target="DCS"/>
 		</Unit>
 		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser.h">
-			<Option target="DCS"/>
-		</Unit>
-		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser_test.cpp">
-			<Option target="DCS"/>
-		</Unit>
-		<Unit filename="/Users/deniztohumcu/Desktop/DCS/libraries/parser/parser_test.h">
 			<Option target="DCS"/>
 		</Unit>
 		<Unit filename="/Users/deniztohumcu/Desktop/DCS/main.cpp">

@@ -47,19 +47,17 @@ using namespace std;
         }
     }
     logicgates::~logicgates() {
-        cout << "\n\n" << endl;
         cout << "Name: " << name << " TYPE: " << type << " Input Size: " << inputSize << endl;
         for (int i = 0; i<inputSize; i++)
         {
             cout << " Input name : " << inputNames[i] << " Value : " << inputs[i] << endl;
         }
         cout << " Output name : " << outputName << " Value : " << output << endl;
-        cout << "\n\n" << endl;
     }
 
 void logicgates::outputCalculator() { // Calculates output
         if (inputSize > 1){
-            if (type == "AND"){
+            if (type == "and"){
                 for (int i = 0; i<inputSize; i++ )
                 {
                     if( i == 0 ) {
@@ -68,7 +66,7 @@ void logicgates::outputCalculator() { // Calculates output
                         output = inputs[i] and output;
                     }
                 }
-            } else if (type == "OR") {
+            } else if (type == "or") {
                 for (int i = 0; i<inputSize; i++ )
                 {
                     if( i == 0 ) {
@@ -77,7 +75,7 @@ void logicgates::outputCalculator() { // Calculates output
                         output = inputs[i] or output;
                     }
                 }
-            } else if (type == "XOR") {
+            } else if (type == "xor") {
                 for (int i = 0; i<inputSize; i++ )
                 {
                     if( i == 0 ) {
@@ -91,7 +89,7 @@ void logicgates::outputCalculator() { // Calculates output
                 terminate();
             }
         } else if (inputSize == 1) {
-            if (type == "INV"){
+            if (type == "not"){
                 output = !inputs[0];
             } else { // Inverters size error
                 cerr << "\033[1;31m ERROR: Inverters can't have more then one input! \033[0m\n" << endl;

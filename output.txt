@@ -1,0 +1,89 @@
+Digital Circuit Simulator - V1.0 - 2019
+Montpellier University - Master EEA/SEI
+
+
+------ Simulation Results and Inputs Per Gate ------ 
+
+- Simulation :  1
+
+Name: P1 TYPE: and Input Size: 2
+ Input name : E1 Value : 0
+ Input name : E2 Value : 0
+ Output name : a Value : 0
+Name: P2 TYPE: or Input Size: 2
+ Input name : E3 Value : 0
+ Input name : E4 Value : 0
+ Output name : b Value : 0
+Name: P3 TYPE: and Input Size: 2
+ Input name : b Value : 0
+ Input name : E5 Value : 0
+ Output name : c Value : 0
+Name: P4 TYPE: or Input Size: 2
+ Input name : a Value : 0
+ Input name : c Value : 0
+ Output name : S1 Value : 0
+Name: P5 TYPE: not Input Size: 1
+ Input name : c Value : 0
+ Output name : S2 Value : 1
+Name: P6 TYPE: or Input Size: 2
+ Input name : c Value : 0
+ Input name : E6 Value : 0
+ Output name : S3 Value : 0
+
+- Simulation :  2
+
+Name: P1 TYPE: and Input Size: 2
+ Input name : E1 Value : 0
+ Input name : E2 Value : 0
+ Output name : a Value : 0
+Name: P2 TYPE: or Input Size: 2
+ Input name : E3 Value : 0
+ Input name : E4 Value : 1
+ Output name : b Value : 1
+Name: P3 TYPE: and Input Size: 2
+ Input name : b Value : 1
+ Input name : E5 Value : 0
+ Output name : c Value : 0
+Name: P4 TYPE: or Input Size: 2
+ Input name : a Value : 0
+ Input name : c Value : 0
+ Output name : S1 Value : 0
+Name: P5 TYPE: not Input Size: 1
+ Input name : c Value : 0
+ Output name : S2 Value : 1
+Name: P6 TYPE: or Input Size: 2
+ Input name : c Value : 0
+ Input name : E6 Value : 0
+ Output name : S3 Value : 0
+
+------ Simulation Vectors and Results ------
+
+Circuit input vectors per input : 
+E1 0 0
+E2 0 0
+E3 0 0
+E4 0 1
+E5 0 0
+E6 0 0
+
+Circuit output vectors per output : 
+S1 0 0
+S2 1 1
+S3 0 0
+a 0 0
+b 0 1
+c 0 0
+
+------ Circuit Information ------
+
+Input Names : E1 E2 E3 E4 E5 E6
+
+Output Names : S1 S2 S3
+
+Gate Names and Types : 
+P1 : and
+P2 : or
+P3 : and
+P4 : or
+P5 : not
+P6 : or

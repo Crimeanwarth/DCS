@@ -204,33 +204,6 @@ libraries/logicgates/logicgates.cpp.s:
 	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/logicgates/logicgates.cpp.s
 .PHONY : libraries/logicgates/logicgates.cpp.s
 
-libraries/parser/log.o: libraries/parser/log.cpp.o
-
-.PHONY : libraries/parser/log.o
-
-# target to build an object file
-libraries/parser/log.cpp.o:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/log.cpp.o
-.PHONY : libraries/parser/log.cpp.o
-
-libraries/parser/log.i: libraries/parser/log.cpp.i
-
-.PHONY : libraries/parser/log.i
-
-# target to preprocess a source file
-libraries/parser/log.cpp.i:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/log.cpp.i
-.PHONY : libraries/parser/log.cpp.i
-
-libraries/parser/log.s: libraries/parser/log.cpp.s
-
-.PHONY : libraries/parser/log.s
-
-# target to generate assembly for a file
-libraries/parser/log.cpp.s:
-	$(MAKE) -f CMakeFiles/DCS.dir/build.make CMakeFiles/DCS.dir/libraries/parser/log.cpp.s
-.PHONY : libraries/parser/log.cpp.s
-
 libraries/parser/parser.o: libraries/parser/parser.cpp.o
 
 .PHONY : libraries/parser/parser.o
@@ -303,9 +276,6 @@ help:
 	@echo "... libraries/logicgates/logicgates.o"
 	@echo "... libraries/logicgates/logicgates.i"
 	@echo "... libraries/logicgates/logicgates.s"
-	@echo "... libraries/parser/log.o"
-	@echo "... libraries/parser/log.i"
-	@echo "... libraries/parser/log.s"
 	@echo "... libraries/parser/parser.o"
 	@echo "... libraries/parser/parser.i"
 	@echo "... libraries/parser/parser.s"

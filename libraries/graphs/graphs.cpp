@@ -31,15 +31,17 @@ graphs::graphs(std::map<std::string, std::string> outputPerGateMapGiven,
 
     GateExtractor();
     DFS(); // Finds the depth of the given circuit and classes the gates in order of reach where 0 means inputs and max means outputs
+    cout << "\n------ Simulation Results and Inputs Per Gate ------ " << endl;
     for (int i = 0; i < simulationSize; i++){
         Simulation(i);
     }
 }
 graphs::~graphs() {
-    cout << "Circuit input vectors per input : " << endl;
+    cout << "\n------ Simulation Vectors and Results ------" << endl;
+    cout << "\nCircuit input vectors per input : " << endl;
     auto it = inputsMap.begin();
     while (it != inputsMap.end()){
-       cout<< it->first << flush;
+       cout<< it->first << " " << flush;
        for (int i = 0; i < it->second.size(); i++ ){
            if (i != it->second.size()-1) {
                cout << it->second[i] << flush;
@@ -47,11 +49,12 @@ graphs::~graphs() {
                cout << " "<< it->second[i] << endl;
            }
        }
+       it++;
     }
-    cout << "Circuit output vectors per output : " << endl;
+    cout << "\nCircuit output vectors per output : " << endl;
     auto itt = outputsMap.begin();
     while (itt != outputsMap.end()){
-        cout<< itt->first << flush;
+        cout<< itt->first << " " << flush;
         for (int i = 0; i < itt->second.size(); i++ ){
             if (i != itt->second.size()-1) {
                 cout << itt->second[i] << flush;
@@ -59,6 +62,7 @@ graphs::~graphs() {
                 cout << " "<< itt->second[i] << endl;
             }
         }
+        itt++;
     }
 };
 void graphs::DFS() {
@@ -70,16 +74,17 @@ void graphs::DFS() {
             if (it->second->waveRank == 0 && entryLevelGateVerifier(it->second->inputNames)) {
                 it->second->waveRank = 1;
                 adjancencyMap[it->first] = 1;
+                // cout << adjancencyMap[it->first] << endl;
                 graphCheckMap.insert(std::pair<std::string, bool>(it->first,false));//Graph creation
-                it++;
             } else if(it->second->waveRank == 0){
                 it->second->waveRank = postGateVerifier(it->second->inputNames, it->second->waveRank);
                 adjancencyMap[it->first] = it->second->waveRank;
+                //cout << adjancencyMap[it->first] << endl;
                 if (it->second->waveRank != 0){ //Graph creation
                     graphCheckMap.insert(std::pair<std::string, bool>(it->first,false));//Graph creation
                 }
-                it++;
             }
+            it++;
         }
         while(itControl != adjancencyMap.end()) {
             auto check = itControl;
@@ -102,6 +107,7 @@ void graphs::GateExtractor() {
 }
 void graphs::Simulation(int simulationTurnToken) {
     auto gateNumber = graphCheckMap.begin(); // iterator generation
+    cout << "\n- Simulation :  " << simulationTurnToken+1 << "\n" << endl;
     while ( gateNumber != graphCheckMap.end()){ // until we reach the end of the map
         if (gatesMap[gateNumber->first]->waveRank == 1 && gateNumber->second == false){ //first wave: wave rank 1
         std::vector<int> inputVector(gatesMap[gateNumber->first]->inputSize,0); // initializing the input vector
