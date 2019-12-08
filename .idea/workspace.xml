@@ -12,22 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a465302f-8545-4210-a277-f1cefddf5d7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/error.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/parser/parser_test.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/parser/parser_test.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c432.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c432Inputs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c499.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DCS.iml.orig" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DCS.iml.orig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DCS" beforeDir="false" afterPath="$PROJECT_DIR$/DCS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DCS.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/DCS.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/graphs/graphs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/graphs/graphs.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/logicgates/logicgates.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/logicgates/logicgates.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/parser/log.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/parser/log.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/parser/parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/parser.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/parser/parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/parser.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +132,8 @@
       <workItem from="1574805712302" duration="2300000" />
       <workItem from="1574878552132" duration="6878000" />
       <workItem from="1546302092998" duration="1590000" />
-      <workItem from="1574969980765" duration="8475000" />
+      <workItem from="1574969980765" duration="9845000" />
+      <workItem from="1575804856380" duration="16884000" />
     </task>
     <task id="LOCAL-00001" summary="DFS inner functions defined">
       <created>1574044238014</created>
@@ -306,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574747971010</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Debug finished">
+      <created>1574984853491</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1574984853491</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +353,8 @@
     <MESSAGE value="Main function" />
     <MESSAGE value="TODOs" />
     <MESSAGE value="debugging parser" />
-    <option name="LAST_COMMIT_MESSAGE" value="debugging parser" />
+    <MESSAGE value="Debug finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -363,16 +368,6 @@
           <url>file://$PROJECT_DIR$/libraries/graphs/graphs.cpp</url>
           <line>67</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/libraries/graphs/graphs.cpp</url>
-          <line>100</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/libraries/parser/parser.cpp</url>
-          <line>86</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

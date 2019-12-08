@@ -66,6 +66,7 @@ graphs::~graphs() {
     }
 };
 void graphs::DFS() {
+    cout << "DFS begins." << endl;
     bool rangeControl = false;
     while(rangeControl == false) {
         auto it = gatesMap.begin();
@@ -74,12 +75,12 @@ void graphs::DFS() {
             if (it->second->waveRank == 0 && entryLevelGateVerifier(it->second->inputNames)) {
                 it->second->waveRank = 1;
                 adjancencyMap[it->first] = 1;
-                // cout << adjancencyMap[it->first] << endl;
+                cout << adjancencyMap[it->first] << endl;
                 graphCheckMap.insert(std::pair<std::string, bool>(it->first,false));//Graph creation
             } else if(it->second->waveRank == 0){
                 it->second->waveRank = postGateVerifier(it->second->inputNames, it->second->waveRank);
                 adjancencyMap[it->first] = it->second->waveRank;
-                //cout << adjancencyMap[it->first] << endl;
+                cout << adjancencyMap[it->first] << endl;
                 if (it->second->waveRank != 0){ //Graph creation
                     graphCheckMap.insert(std::pair<std::string, bool>(it->first,false));//Graph creation
                 }
@@ -97,11 +98,13 @@ void graphs::DFS() {
             itControl++;
         }
     }
+    cout << "DFS is done." << endl;
 }
 void graphs::GateExtractor() {
     auto it = nameTypeMap.begin(); // Map iterator declarations
     while (it != nameTypeMap.end()){ // Initializes the class map that stores the gates
         gatesMap.insert(std::make_pair(it->first, new gateInfo(it->first, it->second,inputPerGateMap[it->first],outputPerGateMap[it->first])));
+        cout<< it->first << " is created" << " type: " << it->second << endl;
         it++;
     }
 }
@@ -143,6 +146,7 @@ void graphs::Simulation(int simulationTurnToken) {
         gateNumber->second = true;
         gateNumber++;
     }
+    cout << "Simulation is done!" << endl;
     auto reit = graphCheckMap.begin();
     while(reit != graphCheckMap.end()){
         graphCheckMap[reit->first] = false;

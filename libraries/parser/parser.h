@@ -30,7 +30,7 @@ public:
     std::vector<std::string> circuitOutputNameVector;
     std::vector<std::string> gateInputNameVector;
     std::vector<std::string> gateOutputNameVector;
-
+    std::vector<std::string> gateNameVector;
     std::map<std::string, std::string> outputPerGateMapGiven; //
     std::map<std::string, std::vector<std::string> > inputPerGateMapGiven; //
     std::map<std::string,std::vector<int> > inputsMapGiven; //

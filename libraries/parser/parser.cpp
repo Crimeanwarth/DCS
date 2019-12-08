@@ -77,12 +77,17 @@ void parser::CircuitFileParser() {
                         gateType = "xor";
                     } else if (gateType == "\nnot"){
                         gateType = "not";
+                    } else if (gateType == "\nnand"){
+                        gateType = "nand";
+                    } else if (gateType == "\nnor"){
+                        gateType = "nor";
                     }
                     std::getline(lineStream, gateName, ' ');
                     std::getline(lineStream, gateOutputName, ' ');
                     while (std::getline(lineStream, gateInputName, ' ')) {
                         vec.push_back(gateInputName);
                     }
+                    gateNameVector.push_back(gateName);
                     outputPerGateMapGiven.insert({gateName, gateOutputName});
                     inputPerGateMapGiven.insert({gateName, vec});
                     adjancencyMapGiven.insert({gateName, 0});
@@ -96,7 +101,7 @@ void parser::CircuitFileParser() {
         std::cerr << "Unable to open circuit file" << std::endl;
         std::terminate();
     }
-    gateNumberGiven = count - 1;
+    gateNumberGiven = count - 3;
     inputNumberGiven = circuitInputNameVector.size();
     outputNumberGiven = circuitOutputNameVector.size();
 }
@@ -115,13 +120,13 @@ void parser::InputFileParser() {
                 i++;
             } else {
                 int it = 0;
-                int vec = stoi(line);
                 while (it < inputNumberGiven) {
-                    inputsMapGiven[circuitInputNameVector[it]].push_back(vec / int(pow(10,(inputNumberGiven - 1 - it))));
-                    inputValue = vec / pow(10, (inputNumberGiven - 1 - it));
-                    if (inputValue == 1) {
-                        vec = vec - pow(10, (inputNumberGiven - 1 - it));
-                    } else if (inputValue != 0) {
+                    int vec = (int)line.at(it) - 48; // - 48 because in ASCII digits start at 48
+                    inputsMapGiven[circuitInputNameVector[it]].push_back(vec);// / int(pow(10,(inputNumberGiven - 1 - it))));
+                    inputValue = vec; /// pow(10, (inputNumberGiven - 1 - it));
+                    //if (inputValue == 1) {
+                        //vec = vec - pow(10, (inputNumberGiven - 1 - it));
+                    /*} else*/ if (inputValue != 0 && inputValue != 1) {
                         std::cerr << "\033[1;31m ERROR: Non binary value is found! " << inputFileName << " : " << "line ->" << i << " \033[0m\n" << std::endl;
                         std::terminate();
                     }

@@ -84,6 +84,24 @@ void logicgates::outputCalculator() { // Calculates output
                         output = inputs[i] xor output;
                     }
                 }
+            } else if (type == "nor") {
+                for (int i = 0; i<inputSize; i++ )
+                {
+                    if( i == 0 ) {
+                        output = !(inputs[i] or inputs[i + 1]);
+                    } else {
+                        output = !(inputs[i] or output);
+                    }
+                }
+            } else if (type == "nand") {
+                for (int i = 0; i<inputSize; i++ )
+                {
+                    if( i == 0 ) {
+                        output = !(inputs[i] and inputs[i + 1]);
+                    } else {
+                        output = !(inputs[i] and output);
+                    }
+                }
             } else { // Error for alien gate
                 cerr << "\033[1;31m ERROR: Unknown gate type! \033[0m\n" << endl;
                 terminate();

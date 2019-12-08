@@ -1,17 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
-<module type="CPP_MODULE" version="4">
-  <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
-    <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="Header Search Paths">
-        <CLASSES />
-        <SOURCES />
-      </library>
-    </orderEntry>
-  </component>
-</module>
+
 =======
-<module classpath="CMake" type="CPP_MODULE" version="4" />
->>>>>>> Graphs
+<?xml version="1.0" encoding="UTF-8"?>
+>>>>>>> a42599b98f1c109b0ef9d78d3db62035702a399f
