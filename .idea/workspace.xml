@@ -15,14 +15,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/DCS.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/DCS.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/DCS.dir/libraries/graphs/graphs.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/DCS.dir/libraries/graphs/graphs.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/DCS.dir/libraries/logicgates/logicgates.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/DCS.dir/libraries/logicgates/logicgates.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/DCS.dir/libraries/parser/parser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/DCS.dir/libraries/parser/parser.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/DCS.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/DCS.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DCS" beforeDir="false" afterPath="$PROJECT_DIR$/DCS" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/graphs/graphs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/graphs/graphs.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/graphs/graphs.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/graphs/graphs.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +129,7 @@
       <workItem from="1574878552132" duration="6878000" />
       <workItem from="1546302092998" duration="1590000" />
       <workItem from="1574969980765" duration="9845000" />
-      <workItem from="1575804856380" duration="20680000" />
+      <workItem from="1575804856380" duration="22018000" />
     </task>
     <task id="LOCAL-00001" summary="DFS inner functions defined">
       <created>1574044238014</created>
@@ -316,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575838392773</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="debugging for scale finished">
+      <created>1575868378312</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1575868378312</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,19 +365,20 @@
     <MESSAGE value="debugging parser" />
     <MESSAGE value="Debug finished" />
     <MESSAGE value="debugging for scale" />
-    <option name="LAST_COMMIT_MESSAGE" value="debugging for scale" />
+    <MESSAGE value="debugging for scale finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugging for scale finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/libraries/graphs/graphs.h</url>
-          <line>54</line>
+          <line>55</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/libraries/graphs/graphs.cpp</url>
-          <line>85</line>
+          <line>88</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>

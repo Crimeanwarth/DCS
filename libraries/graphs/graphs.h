@@ -28,6 +28,7 @@ public:
     std::vector<std::string> typeVector;//name::type
    */
     std::vector<std::string> gateNameVector;
+    std::vector<int> waveRankVector;
     std::map<std::string, std::string> outputPerGateMap;
     std::map<std::string, std::vector<string> > inputPerGateMap;
     std::map<std::string, std::vector<int> > inputsMap;
