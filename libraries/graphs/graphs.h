@@ -27,6 +27,7 @@ public:
     std::vector<std::string> nameVector;
     std::vector<std::string> typeVector;//name::type
    */
+    std::vector<std::string> gateNameVector;
     std::map<std::string, std::string> outputPerGateMap;
     std::map<std::string, std::vector<string> > inputPerGateMap;
     std::map<std::string, std::vector<int> > inputsMap;
@@ -47,6 +48,7 @@ public:
             std::map<std::string, std::vector<int> > outputMapGiven,
             std::map<std::string, int> adjancencyMapGiven,
             std::map<std::string,std::string> nameTypeMapGiven,
+            std::vector<std::string> gateNameVectorGiven,
             int gateNumberGiven, int inputNumberGiven, int outputNumberGiven, int simulationSizeGiven);
     ~graphs();
     // Methods declaration

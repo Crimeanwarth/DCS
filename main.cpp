@@ -9,7 +9,7 @@ int main(/*int argc, const char * argv[]*/) {
     parser parsed(argc, argv);
     cout << "Digital Circuit Simulator - V1.0 - 2019" << endl;
     cout << "Montpellier University - Master EEA/SEI\n"<< endl;
-    graphs simulation(parsed.outputPerGateMapGiven,parsed.inputPerGateMapGiven,parsed.inputsMapGiven,parsed.outputMapGiven,parsed.adjancencyMapGiven,parsed.nameTypeMapGiven,parsed.gateNumberGiven,parsed.inputNumberGiven,parsed.outputNumberGiven,parsed.simulationSizeGiven);
+    graphs simulation(parsed.outputPerGateMapGiven,parsed.inputPerGateMapGiven,parsed.inputsMapGiven,parsed.outputMapGiven,parsed.adjancencyMapGiven,parsed.nameTypeMapGiven,parsed.gateNameVector,parsed.gateNumberGiven,parsed.inputNumberGiven,parsed.outputNumberGiven,parsed.simulationSizeGiven);
     return 0;
 }
 

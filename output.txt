@@ -164,225 +164,39 @@ gate_99 is created type: xor
 DFS begins.
 1
 1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
 1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
 1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
 1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
 1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
 1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
 1
-0
+1
+1
+1
+1
+1
+1
+1
+1
 1
 1
 2
-1
-2
-2
-0
-0
-0
-0
-2
-2
-2
-2
-1
-0
-0
-0
-0
-0
-0
-2
-2
-2
-2
-1
 2
 2
 2
 2
 2
 2
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
 2
 2
 2
@@ -397,148 +211,1807 @@ DFS begins.
 4
 4
 4
-0
-0
-0
-0
-0
-0
-5
-0
-5
-0
-5
-0
 5
 5
 5
 5
 5
 5
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+7
+7
+7
+7
+7
+7
+7
+7
+7
+7
+8
+8
+8
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+10
+10
+10
+10
+10
+10
+10
+10
+10
+11
+12
+12
+13
+13
+13
+13
+13
+13
+13
+13
+13
+14
+14
+14
+14
+14
+14
+14
+14
+14
+15
+15
+15
+15
+15
+15
+16
+16
+16
+16
+16
+17
+17
+17
+DFS is done.
+
+------ Simulation Results and Inputs Per Gate ------ 
+
+- Simulation :  1
+
+Name: gate_1 TYPE: not Input Size: 1
+ Input name : I_1 Value : 0
+ Output name : L3 Value : 1
+Name: gate_10 TYPE: not Input Size: 1
+ Input name : I_18 Value : 0
+ Output name : L21 Value : 1
+Name: gate_100 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L107 Value : 0
+ Output name : L137 Value : 0
+Name: gate_101 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L108 Value : 0
+ Output name : L138 Value : 0
+Name: gate_102 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L109 Value : 0
+ Output name : L139 Value : 0
+Name: gate_103 TYPE: nand Input Size: 2
+ Input name : I_3 Value : 0
+ Input name : L134 Value : 0
+ Output name : L140 Value : 1
+Name: gate_104 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L110 Value : 0
+ Output name : L141 Value : 0
+Name: gate_105 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_7 Value : 0
+ Output name : L142 Value : 1
+Name: gate_106 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L111 Value : 0
+ Output name : L143 Value : 0
+Name: gate_107 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_11 Value : 0
+ Output name : L144 Value : 1
+Name: gate_108 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L112 Value : 0
+ Output name : L145 Value : 0
+Name: gate_109 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_15 Value : 0
+ Output name : L146 Value : 1
+Name: gate_11 TYPE: not Input Size: 1
+ Input name : I_20 Value : 0
+ Output name : L23 Value : 1
+Name: gate_110 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L113 Value : 0
+ Output name : L147 Value : 0
+Name: gate_111 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_19 Value : 0
+ Output name : L148 Value : 1
+Name: gate_112 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L114 Value : 0
+ Output name : L149 Value : 0
+Name: gate_113 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_23 Value : 0
+ Output name : L150 Value : 1
+Name: gate_114 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_27 Value : 0
+ Output name : L151 Value : 1
+Name: gate_115 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_31 Value : 0
+ Output name : L152 Value : 1
+Name: gate_116 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_35 Value : 0
+ Output name : L153 Value : 1
+Name: gate_117 TYPE: nand Input Size: 2
+ Input name : L136 Value : 0
+ Input name : L124 Value : 0
+ Output name : L154 Value : 1
+Name: gate_118 TYPE: nand Input Size: 2
+ Input name : L137 Value : 0
+ Input name : L125 Value : 0
+ Output name : L155 Value : 1
+Name: gate_119 TYPE: nand Input Size: 2
+ Input name : L138 Value : 0
+ Input name : L126 Value : 0
+ Output name : L156 Value : 1
+Name: gate_12 TYPE: not Input Size: 1
+ Input name : I_22 Value : 0
+ Output name : L25 Value : 1
+Name: gate_120 TYPE: nand Input Size: 2
+ Input name : L139 Value : 0
+ Input name : L127 Value : 0
+ Output name : L157 Value : 1
+Name: gate_121 TYPE: nand Input Size: 2
+ Input name : L141 Value : 0
+ Input name : L128 Value : 0
+ Output name : L158 Value : 1
+Name: gate_122 TYPE: nand Input Size: 2
+ Input name : L143 Value : 0
+ Input name : L129 Value : 0
+ Output name : L159 Value : 1
+Name: gate_123 TYPE: nand Input Size: 2
+ Input name : L145 Value : 0
+ Input name : L130 Value : 0
+ Output name : L160 Value : 1
+Name: gate_124 TYPE: nand Input Size: 2
+ Input name : L147 Value : 0
+ Input name : L131 Value : 0
+ Output name : L161 Value : 1
+Name: gate_125 TYPE: nand Input Size: 2
+ Input name : L149 Value : 0
+ Input name : L132 Value : 0
+ Output name : L162 Value : 1
+Name: gate_126 TYPE: and Input Size: 9
+ Input name : L154 Value : 1
+ Input name : L155 Value : 1
+ Input name : L156 Value : 1
+ Input name : L157 Value : 1
+ Input name : L158 Value : 1
+ Input name : L159 Value : 1
+ Input name : L160 Value : 1
+ Input name : L161 Value : 1
+ Input name : L162 Value : 1
+ Output name : L163 Value : 1
+Name: gate_127 TYPE: not Input Size: 1
+ Input name : L163 Value : 1
+ Output name : L164 Value : 0
+Name: gate_128 TYPE: not Input Size: 1
+ Input name : L163 Value : 1
+ Output name : O_3 Value : 0
+Name: gate_129 TYPE: nand Input Size: 2
+ Input name : I_5 Value : 0
+ Input name : L164 Value : 0
+ Output name : L166 Value : 1
+Name: gate_13 TYPE: not Input Size: 1
+ Input name : I_24 Value : 0
+ Output name : L27 Value : 1
+Name: gate_130 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_9 Value : 0
+ Output name : L167 Value : 1
+Name: gate_131 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_13 Value : 0
+ Output name : L168 Value : 1
+Name: gate_132 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_17 Value : 0
+ Output name : L169 Value : 1
+Name: gate_133 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_21 Value : 0
+ Output name : L170 Value : 1
+Name: gate_134 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_25 Value : 0
+ Output name : L171 Value : 1
+Name: gate_135 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_29 Value : 0
+ Output name : L172 Value : 1
+Name: gate_136 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_33 Value : 0
+ Output name : L173 Value : 1
+Name: gate_137 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_36 Value : 0
+ Output name : L174 Value : 1
+Name: gate_138 TYPE: nand Input Size: 4
+ Input name : I_2 Value : 0
+ Input name : L93 Value : 0
+ Input name : L140 Value : 1
+ Input name : L166 Value : 1
+ Output name : L175 Value : 1
+Name: gate_139 TYPE: nand Input Size: 4
+ Input name : L95 Value : 0
+ Input name : L142 Value : 1
+ Input name : L167 Value : 1
+ Input name : I_6 Value : 0
+ Output name : L176 Value : 1
+Name: gate_14 TYPE: not Input Size: 1
+ Input name : I_26 Value : 0
+ Output name : L29 Value : 1
+Name: gate_140 TYPE: nand Input Size: 4
+ Input name : L97 Value : 0
+ Input name : L144 Value : 1
+ Input name : L168 Value : 1
+ Input name : I_10 Value : 0
+ Output name : L177 Value : 1
+Name: gate_141 TYPE: nand Input Size: 4
+ Input name : L99 Value : 0
+ Input name : L146 Value : 1
+ Input name : L169 Value : 1
+ Input name : I_14 Value : 0
+ Output name : L178 Value : 1
+Name: gate_142 TYPE: nand Input Size: 4
+ Input name : L100 Value : 0
+ Input name : L148 Value : 1
+ Input name : L170 Value : 1
+ Input name : I_18 Value : 0
+ Output name : L179 Value : 1
+Name: gate_143 TYPE: nand Input Size: 4
+ Input name : L101 Value : 0
+ Input name : L150 Value : 1
+ Input name : L171 Value : 1
+ Input name : I_22 Value : 0
+ Output name : L180 Value : 1
+Name: gate_144 TYPE: nand Input Size: 4
+ Input name : L102 Value : 0
+ Input name : L151 Value : 1
+ Input name : L172 Value : 1
+ Input name : I_26 Value : 0
+ Output name : L181 Value : 1
+Name: gate_145 TYPE: nand Input Size: 4
+ Input name : L103 Value : 0
+ Input name : L152 Value : 1
+ Input name : L173 Value : 1
+ Input name : I_30 Value : 0
+ Output name : L182 Value : 1
+Name: gate_146 TYPE: nand Input Size: 4
+ Input name : L104 Value : 0
+ Input name : L153 Value : 1
+ Input name : L174 Value : 1
+ Input name : I_34 Value : 0
+ Output name : L183 Value : 1
+Name: gate_147 TYPE: not Input Size: 1
+ Input name : L175 Value : 1
+ Output name : L184 Value : 0
+Name: gate_148 TYPE: and Input Size: 8
+ Input name : L176 Value : 1
+ Input name : L177 Value : 1
+ Input name : L178 Value : 1
+ Input name : L179 Value : 1
+ Input name : L180 Value : 1
+ Input name : L181 Value : 1
+ Input name : L182 Value : 1
+ Input name : L183 Value : 1
+ Output name : L185 Value : 1
+Name: gate_149 TYPE: not Input Size: 1
+ Input name : L178 Value : 1
+ Output name : L186 Value : 0
+Name: gate_15 TYPE: not Input Size: 1
+ Input name : I_28 Value : 0
+ Output name : L31 Value : 1
+Name: gate_150 TYPE: not Input Size: 1
+ Input name : L180 Value : 1
+ Output name : L187 Value : 0
+Name: gate_151 TYPE: not Input Size: 1
+ Input name : L181 Value : 1
+ Output name : L188 Value : 0
+Name: gate_152 TYPE: not Input Size: 1
+ Input name : L182 Value : 1
+ Output name : L189 Value : 0
+Name: gate_153 TYPE: nor Input Size: 2
+ Input name : L184 Value : 0
+ Input name : L185 Value : 1
+ Output name : O_4 Value : 0
+Name: gate_154 TYPE: nand Input Size: 2
+ Input name : L177 Value : 1
+ Input name : L186 Value : 0
+ Output name : L191 Value : 1
+Name: gate_155 TYPE: nand Input Size: 4
+ Input name : L177 Value : 1
+ Input name : L178 Value : 1
+ Input name : L187 Value : 0
+ Input name : L179 Value : 1
+ Output name : L192 Value : 0
+Name: gate_156 TYPE: nand Input Size: 3
+ Input name : L179 Value : 1
+ Input name : L178 Value : 1
+ Input name : L188 Value : 0
+ Output name : L193 Value : 1
+Name: gate_157 TYPE: nand Input Size: 4
+ Input name : L177 Value : 1
+ Input name : L178 Value : 1
+ Input name : L181 Value : 1
+ Input name : L189 Value : 0
+ Output name : L194 Value : 1
+Name: gate_158 TYPE: nand Input Size: 4
+ Input name : L176 Value : 1
+ Input name : L177 Value : 1
+ Input name : L191 Value : 1
+ Input name : L179 Value : 1
+ Output name : O_5 Value : 1
+Name: gate_159 TYPE: nand Input Size: 4
+ Input name : L176 Value : 1
+ Input name : L177 Value : 1
+ Input name : L192 Value : 0
+ Input name : L193 Value : 1
+ Output name : O_6 Value : 0
+Name: gate_16 TYPE: not Input Size: 1
+ Input name : I_30 Value : 0
+ Output name : L33 Value : 1
+Name: gate_160 TYPE: nand Input Size: 4
+ Input name : L176 Value : 1
+ Input name : L191 Value : 1
+ Input name : L192 Value : 0
+ Input name : L194 Value : 1
+ Output name : O_7 Value : 0
+Name: gate_17 TYPE: not Input Size: 1
+ Input name : I_32 Value : 0
+ Output name : L35 Value : 1
+Name: gate_18 TYPE: not Input Size: 1
+ Input name : I_34 Value : 0
+ Output name : L37 Value : 1
+Name: gate_19 TYPE: nand Input Size: 2
+ Input name : L3 Value : 1
+ Input name : I_2 Value : 0
+ Output name : L38 Value : 1
+Name: gate_2 TYPE: not Input Size: 1
+ Input name : I_2 Value : 0
+ Output name : L5 Value : 1
+Name: gate_20 TYPE: nor Input Size: 2
+ Input name : I_3 Value : 0
+ Input name : L5 Value : 1
+ Output name : L40 Value : 0
+Name: gate_21 TYPE: nor Input Size: 2
+ Input name : I_5 Value : 0
+ Input name : L5 Value : 1
+ Output name : L42 Value : 0
+Name: gate_22 TYPE: nand Input Size: 2
+ Input name : L7 Value : 0
+ Input name : I_6 Value : 0
+ Output name : L43 Value : 1
+Name: gate_23 TYPE: nand Input Size: 2
+ Input name : L11 Value : 0
+ Input name : I_10 Value : 0
+ Output name : L44 Value : 1
+Name: gate_24 TYPE: nand Input Size: 2
+ Input name : L15 Value : 0
+ Input name : I_14 Value : 0
+ Output name : L45 Value : 1
+Name: gate_25 TYPE: nand Input Size: 2
+ Input name : L19 Value : 0
+ Input name : I_18 Value : 0
+ Output name : L46 Value : 1
+Name: gate_26 TYPE: nand Input Size: 2
+ Input name : L23 Value : 1
+ Input name : I_22 Value : 0
+ Output name : L47 Value : 1
+Name: gate_27 TYPE: nand Input Size: 2
+ Input name : L27 Value : 1
+ Input name : I_26 Value : 0
+ Output name : L48 Value : 1
+Name: gate_28 TYPE: nand Input Size: 2
+ Input name : L31 Value : 1
+ Input name : I_30 Value : 0
+ Output name : L49 Value : 1
+Name: gate_29 TYPE: nand Input Size: 2
+ Input name : L35 Value : 1
+ Input name : I_34 Value : 0
+ Output name : L50 Value : 1
+Name: gate_3 TYPE: not Input Size: 1
+ Input name : I_4 Value : 0
+ Output name : L7 Value : 1
+Name: gate_30 TYPE: nor Input Size: 2
+ Input name : I_7 Value : 0
+ Input name : L9 Value : 0
+ Output name : L52 Value : 0
+Name: gate_31 TYPE: nor Input Size: 2
+ Input name : I_9 Value : 0
+ Input name : L9 Value : 0
+ Output name : L54 Value : 0
+Name: gate_32 TYPE: nor Input Size: 2
+ Input name : I_11 Value : 0
+ Input name : L13 Value : 0
+ Output name : L56 Value : 0
+Name: gate_33 TYPE: nor Input Size: 2
+ Input name : I_13 Value : 0
+ Input name : L13 Value : 0
+ Output name : L58 Value : 0
+Name: gate_34 TYPE: nor Input Size: 2
+ Input name : I_15 Value : 0
+ Input name : L17 Value : 0
+ Output name : L60 Value : 0
+Name: gate_35 TYPE: nor Input Size: 2
+ Input name : I_17 Value : 0
+ Input name : L17 Value : 0
+ Output name : L62 Value : 0
+Name: gate_36 TYPE: nor Input Size: 2
+ Input name : I_19 Value : 0
+ Input name : L21 Value : 1
+ Output name : L64 Value : 0
+Name: gate_37 TYPE: nor Input Size: 2
+ Input name : I_21 Value : 0
+ Input name : L21 Value : 1
+ Output name : L66 Value : 0
+Name: gate_38 TYPE: nor Input Size: 2
+ Input name : I_23 Value : 0
+ Input name : L25 Value : 1
+ Output name : L68 Value : 0
+Name: gate_39 TYPE: nor Input Size: 2
+ Input name : I_25 Value : 0
+ Input name : L25 Value : 1
+ Output name : L70 Value : 0
+Name: gate_4 TYPE: not Input Size: 1
+ Input name : I_6 Value : 0
+ Output name : L9 Value : 1
+Name: gate_40 TYPE: nor Input Size: 2
+ Input name : I_27 Value : 0
+ Input name : L29 Value : 1
+ Output name : L72 Value : 0
+Name: gate_41 TYPE: nor Input Size: 2
+ Input name : I_29 Value : 0
+ Input name : L29 Value : 1
+ Output name : L74 Value : 0
+Name: gate_42 TYPE: nor Input Size: 2
+ Input name : I_31 Value : 0
+ Input name : L33 Value : 1
+ Output name : L76 Value : 0
+Name: gate_43 TYPE: nor Input Size: 2
+ Input name : I_33 Value : 0
+ Input name : L33 Value : 1
+ Output name : L78 Value : 0
+Name: gate_44 TYPE: nor Input Size: 2
+ Input name : I_35 Value : 0
+ Input name : L37 Value : 1
+ Output name : L80 Value : 0
+Name: gate_45 TYPE: nor Input Size: 2
+ Input name : I_36 Value : 0
+ Input name : L37 Value : 1
+ Output name : L82 Value : 0
+Name: gate_46 TYPE: and Input Size: 9
+ Input name : L38 Value : 1
+ Input name : L43 Value : 1
+ Input name : L44 Value : 1
+ Input name : L45 Value : 1
+ Input name : L46 Value : 1
+ Input name : L47 Value : 1
+ Input name : L48 Value : 1
+ Input name : L49 Value : 1
+ Input name : L50 Value : 1
+ Output name : L83 Value : 1
+Name: gate_47 TYPE: not Input Size: 1
+ Input name : L83 Value : 1
+ Output name : L84 Value : 0
+Name: gate_48 TYPE: not Input Size: 1
+ Input name : L83 Value : 1
+ Output name : L85 Value : 0
+Name: gate_49 TYPE: not Input Size: 1
+ Input name : L83 Value : 1
+ Output name : O_1 Value : 0
+Name: gate_5 TYPE: not Input Size: 1
+ Input name : I_8 Value : 0
+ Output name : L11 Value : 1
+Name: gate_50 TYPE: xor Input Size: 2
+ Input name : L84 Value : 0
+ Input name : L38 Value : 1
+ Output name : L87 Value : 0
+Name: gate_51 TYPE: xor Input Size: 2
+ Input name : L84 Value : 0
+ Input name : L43 Value : 1
+ Output name : L88 Value : 0
+Name: gate_52 TYPE: xor Input Size: 2
+ Input name : L84 Value : 0
+ Input name : L44 Value : 1
+ Output name : L89 Value : 0
+Name: gate_53 TYPE: xor Input Size: 2
+ Input name : L84 Value : 0
+ Input name : L45 Value : 1
+ Output name : L90 Value : 0
+Name: gate_54 TYPE: xor Input Size: 2
+ Input name : L84 Value : 0
+ Input name : L46 Value : 1
+ Output name : L91 Value : 0
+Name: gate_55 TYPE: xor Input Size: 2
+ Input name : L84 Value : 0
+ Input name : L47 Value : 1
+ Output name : L92 Value : 0
+Name: gate_56 TYPE: nand Input Size: 2
+ Input name : I_1 Value : 0
+ Input name : L85 Value : 0
+ Output name : L93 Value : 1
+Name: gate_57 TYPE: xor Input Size: 2
+ Input name : L84 Value : 0
+ Input name : L48 Value : 1
+ Output name : L94 Value : 0
+Name: gate_58 TYPE: nand Input Size: 2
+ Input name : L85 Value : 0
+ Input name : I_4 Value : 0
+ Output name : L95 Value : 1
+Name: gate_59 TYPE: xor Input Size: 2
+ Input name : L84 Value : 0
+ Input name : L49 Value : 1
+ Output name : L96 Value : 0
+Name: gate_6 TYPE: not Input Size: 1
+ Input name : I_10 Value : 0
+ Output name : L13 Value : 1
+Name: gate_60 TYPE: nand Input Size: 2
+ Input name : L85 Value : 0
+ Input name : I_8 Value : 0
+ Output name : L97 Value : 1
+Name: gate_61 TYPE: xor Input Size: 2
+ Input name : L84 Value : 0
+ Input name : L50 Value : 1
+ Output name : L98 Value : 0
+Name: gate_62 TYPE: nand Input Size: 2
+ Input name : L85 Value : 0
+ Input name : I_12 Value : 0
+ Output name : L99 Value : 1
+Name: gate_63 TYPE: nand Input Size: 2
+ Input name : L85 Value : 0
+ Input name : I_16 Value : 0
+ Output name : L100 Value : 1
+Name: gate_64 TYPE: nand Input Size: 2
+ Input name : L85 Value : 0
+ Input name : I_20 Value : 0
+ Output name : L101 Value : 1
+Name: gate_65 TYPE: nand Input Size: 2
+ Input name : L85 Value : 0
+ Input name : I_24 Value : 0
+ Output name : L102 Value : 1
+Name: gate_66 TYPE: nand Input Size: 2
+ Input name : L85 Value : 0
+ Input name : I_28 Value : 0
+ Output name : L103 Value : 1
+Name: gate_67 TYPE: nand Input Size: 2
+ Input name : L85 Value : 0
+ Input name : I_32 Value : 0
+ Output name : L104 Value : 1
+Name: gate_68 TYPE: nand Input Size: 2
+ Input name : L87 Value : 0
+ Input name : L40 Value : 0
+ Output name : L105 Value : 1
+Name: gate_69 TYPE: nand Input Size: 2
+ Input name : L87 Value : 0
+ Input name : L42 Value : 0
+ Output name : L106 Value : 1
+Name: gate_7 TYPE: not Input Size: 1
+ Input name : I_12 Value : 0
+ Output name : L15 Value : 1
+Name: gate_70 TYPE: nand Input Size: 2
+ Input name : L88 Value : 0
+ Input name : L52 Value : 0
+ Output name : L107 Value : 1
+Name: gate_71 TYPE: nand Input Size: 2
+ Input name : L89 Value : 0
+ Input name : L56 Value : 0
+ Output name : L108 Value : 1
+Name: gate_72 TYPE: nand Input Size: 2
+ Input name : L90 Value : 0
+ Input name : L60 Value : 0
+ Output name : L109 Value : 1
+Name: gate_73 TYPE: nand Input Size: 2
+ Input name : L91 Value : 0
+ Input name : L64 Value : 0
+ Output name : L110 Value : 1
+Name: gate_74 TYPE: nand Input Size: 2
+ Input name : L92 Value : 0
+ Input name : L68 Value : 0
+ Output name : L111 Value : 1
+Name: gate_75 TYPE: nand Input Size: 2
+ Input name : L94 Value : 0
+ Input name : L72 Value : 0
+ Output name : L112 Value : 1
+Name: gate_76 TYPE: nand Input Size: 2
+ Input name : L96 Value : 0
+ Input name : L76 Value : 0
+ Output name : L113 Value : 1
+Name: gate_77 TYPE: nand Input Size: 2
+ Input name : L98 Value : 0
+ Input name : L80 Value : 0
+ Output name : L114 Value : 1
+Name: gate_78 TYPE: nand Input Size: 2
+ Input name : L88 Value : 0
+ Input name : L54 Value : 0
+ Output name : L115 Value : 1
+Name: gate_79 TYPE: nand Input Size: 2
+ Input name : L89 Value : 0
+ Input name : L58 Value : 0
+ Output name : L116 Value : 1
+Name: gate_8 TYPE: not Input Size: 1
+ Input name : I_14 Value : 0
+ Output name : L17 Value : 1
+Name: gate_80 TYPE: nand Input Size: 2
+ Input name : L90 Value : 0
+ Input name : L62 Value : 0
+ Output name : L117 Value : 1
+Name: gate_81 TYPE: nand Input Size: 2
+ Input name : L91 Value : 0
+ Input name : L66 Value : 0
+ Output name : L118 Value : 1
+Name: gate_82 TYPE: nand Input Size: 2
+ Input name : L92 Value : 0
+ Input name : L70 Value : 0
+ Output name : L119 Value : 1
+Name: gate_83 TYPE: nand Input Size: 2
+ Input name : L94 Value : 0
+ Input name : L74 Value : 0
+ Output name : L120 Value : 1
+Name: gate_84 TYPE: nand Input Size: 2
+ Input name : L96 Value : 0
+ Input name : L78 Value : 0
+ Output name : L121 Value : 1
+Name: gate_85 TYPE: nand Input Size: 2
+ Input name : L98 Value : 0
+ Input name : L82 Value : 0
+ Output name : L122 Value : 1
+Name: gate_86 TYPE: and Input Size: 9
+ Input name : L105 Value : 1
+ Input name : L107 Value : 1
+ Input name : L108 Value : 1
+ Input name : L109 Value : 1
+ Input name : L110 Value : 1
+ Input name : L111 Value : 1
+ Input name : L112 Value : 1
+ Input name : L113 Value : 1
+ Input name : L114 Value : 1
+ Output name : L123 Value : 1
+Name: gate_87 TYPE: not Input Size: 1
+ Input name : L106 Value : 1
+ Output name : L124 Value : 0
+Name: gate_88 TYPE: not Input Size: 1
+ Input name : L115 Value : 1
+ Output name : L125 Value : 0
+Name: gate_89 TYPE: not Input Size: 1
+ Input name : L116 Value : 1
+ Output name : L126 Value : 0
+Name: gate_9 TYPE: not Input Size: 1
+ Input name : I_16 Value : 0
+ Output name : L19 Value : 1
+Name: gate_90 TYPE: not Input Size: 1
+ Input name : L117 Value : 1
+ Output name : L127 Value : 0
+Name: gate_91 TYPE: not Input Size: 1
+ Input name : L118 Value : 1
+ Output name : L128 Value : 0
+Name: gate_92 TYPE: not Input Size: 1
+ Input name : L119 Value : 1
+ Output name : L129 Value : 0
+Name: gate_93 TYPE: not Input Size: 1
+ Input name : L120 Value : 1
+ Output name : L130 Value : 0
+Name: gate_94 TYPE: not Input Size: 1
+ Input name : L121 Value : 1
+ Output name : L131 Value : 0
+Name: gate_95 TYPE: not Input Size: 1
+ Input name : L122 Value : 1
+ Output name : L132 Value : 0
+Name: gate_96 TYPE: not Input Size: 1
+ Input name : L123 Value : 1
+ Output name : L133 Value : 0
+Name: gate_97 TYPE: not Input Size: 1
+ Input name : L123 Value : 1
+ Output name : L134 Value : 0
+Name: gate_98 TYPE: not Input Size: 1
+ Input name : L123 Value : 1
+ Output name : O_2 Value : 0
+Name: gate_99 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L105 Value : 1
+ Output name : L136 Value : 0
+Simulation is done!
+
+- Simulation :  2
+
+Name: gate_1 TYPE: not Input Size: 1
+ Input name : I_1 Value : 1
+ Output name : L3 Value : 0
+Name: gate_10 TYPE: not Input Size: 1
+ Input name : I_18 Value : 1
+ Output name : L21 Value : 0
+Name: gate_100 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L107 Value : 0
+ Output name : L137 Value : 0
+Name: gate_101 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L108 Value : 0
+ Output name : L138 Value : 0
+Name: gate_102 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L109 Value : 0
+ Output name : L139 Value : 0
+Name: gate_103 TYPE: nand Input Size: 2
+ Input name : I_3 Value : 1
+ Input name : L134 Value : 0
+ Output name : L140 Value : 1
+Name: gate_104 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L110 Value : 0
+ Output name : L141 Value : 0
+Name: gate_105 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_7 Value : 1
+ Output name : L142 Value : 0
+Name: gate_106 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L111 Value : 0
+ Output name : L143 Value : 0
+Name: gate_107 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_11 Value : 1
+ Output name : L144 Value : 0
+Name: gate_108 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L112 Value : 0
+ Output name : L145 Value : 0
+Name: gate_109 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_15 Value : 1
+ Output name : L146 Value : 0
+Name: gate_11 TYPE: not Input Size: 1
+ Input name : I_20 Value : 1
+ Output name : L23 Value : 0
+Name: gate_110 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L113 Value : 0
+ Output name : L147 Value : 0
+Name: gate_111 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_19 Value : 1
+ Output name : L148 Value : 0
+Name: gate_112 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L114 Value : 0
+ Output name : L149 Value : 0
+Name: gate_113 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_23 Value : 1
+ Output name : L150 Value : 0
+Name: gate_114 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_27 Value : 1
+ Output name : L151 Value : 0
+Name: gate_115 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_31 Value : 1
+ Output name : L152 Value : 0
+Name: gate_116 TYPE: nand Input Size: 2
+ Input name : L134 Value : 0
+ Input name : I_35 Value : 1
+ Output name : L153 Value : 0
+Name: gate_117 TYPE: nand Input Size: 2
+ Input name : L136 Value : 0
+ Input name : L124 Value : 0
+ Output name : L154 Value : 1
+Name: gate_118 TYPE: nand Input Size: 2
+ Input name : L137 Value : 0
+ Input name : L125 Value : 0
+ Output name : L155 Value : 1
+Name: gate_119 TYPE: nand Input Size: 2
+ Input name : L138 Value : 0
+ Input name : L126 Value : 0
+ Output name : L156 Value : 1
+Name: gate_12 TYPE: not Input Size: 1
+ Input name : I_22 Value : 1
+ Output name : L25 Value : 0
+Name: gate_120 TYPE: nand Input Size: 2
+ Input name : L139 Value : 0
+ Input name : L127 Value : 0
+ Output name : L157 Value : 1
+Name: gate_121 TYPE: nand Input Size: 2
+ Input name : L141 Value : 0
+ Input name : L128 Value : 0
+ Output name : L158 Value : 1
+Name: gate_122 TYPE: nand Input Size: 2
+ Input name : L143 Value : 0
+ Input name : L129 Value : 0
+ Output name : L159 Value : 1
+Name: gate_123 TYPE: nand Input Size: 2
+ Input name : L145 Value : 0
+ Input name : L130 Value : 0
+ Output name : L160 Value : 1
+Name: gate_124 TYPE: nand Input Size: 2
+ Input name : L147 Value : 0
+ Input name : L131 Value : 0
+ Output name : L161 Value : 1
+Name: gate_125 TYPE: nand Input Size: 2
+ Input name : L149 Value : 0
+ Input name : L132 Value : 0
+ Output name : L162 Value : 1
+Name: gate_126 TYPE: and Input Size: 9
+ Input name : L154 Value : 1
+ Input name : L155 Value : 1
+ Input name : L156 Value : 1
+ Input name : L157 Value : 1
+ Input name : L158 Value : 1
+ Input name : L159 Value : 1
+ Input name : L160 Value : 1
+ Input name : L161 Value : 1
+ Input name : L162 Value : 1
+ Output name : L163 Value : 1
+Name: gate_127 TYPE: not Input Size: 1
+ Input name : L163 Value : 1
+ Output name : L164 Value : 0
+Name: gate_128 TYPE: not Input Size: 1
+ Input name : L163 Value : 1
+ Output name : O_3 Value : 0
+Name: gate_129 TYPE: nand Input Size: 2
+ Input name : I_5 Value : 1
+ Input name : L164 Value : 0
+ Output name : L166 Value : 1
+Name: gate_13 TYPE: not Input Size: 1
+ Input name : I_24 Value : 1
+ Output name : L27 Value : 0
+Name: gate_130 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_9 Value : 1
+ Output name : L167 Value : 0
+Name: gate_131 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_13 Value : 1
+ Output name : L168 Value : 0
+Name: gate_132 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_17 Value : 1
+ Output name : L169 Value : 0
+Name: gate_133 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_21 Value : 1
+ Output name : L170 Value : 0
+Name: gate_134 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_25 Value : 1
+ Output name : L171 Value : 0
+Name: gate_135 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_29 Value : 1
+ Output name : L172 Value : 0
+Name: gate_136 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_33 Value : 1
+ Output name : L173 Value : 0
+Name: gate_137 TYPE: nand Input Size: 2
+ Input name : L164 Value : 0
+ Input name : I_36 Value : 1
+ Output name : L174 Value : 0
+Name: gate_138 TYPE: nand Input Size: 4
+ Input name : I_2 Value : 1
+ Input name : L93 Value : 0
+ Input name : L140 Value : 1
+ Input name : L166 Value : 1
+ Output name : L175 Value : 1
+Name: gate_139 TYPE: nand Input Size: 4
+ Input name : L95 Value : 0
+ Input name : L142 Value : 0
+ Input name : L167 Value : 0
+ Input name : I_6 Value : 1
+ Output name : L176 Value : 0
+Name: gate_14 TYPE: not Input Size: 1
+ Input name : I_26 Value : 1
+ Output name : L29 Value : 0
+Name: gate_140 TYPE: nand Input Size: 4
+ Input name : L97 Value : 0
+ Input name : L144 Value : 0
+ Input name : L168 Value : 0
+ Input name : I_10 Value : 1
+ Output name : L177 Value : 0
+Name: gate_141 TYPE: nand Input Size: 4
+ Input name : L99 Value : 0
+ Input name : L146 Value : 0
+ Input name : L169 Value : 0
+ Input name : I_14 Value : 1
+ Output name : L178 Value : 0
+Name: gate_142 TYPE: nand Input Size: 4
+ Input name : L100 Value : 0
+ Input name : L148 Value : 0
+ Input name : L170 Value : 0
+ Input name : I_18 Value : 1
+ Output name : L179 Value : 0
+Name: gate_143 TYPE: nand Input Size: 4
+ Input name : L101 Value : 0
+ Input name : L150 Value : 0
+ Input name : L171 Value : 0
+ Input name : I_22 Value : 1
+ Output name : L180 Value : 0
+Name: gate_144 TYPE: nand Input Size: 4
+ Input name : L102 Value : 0
+ Input name : L151 Value : 0
+ Input name : L172 Value : 0
+ Input name : I_26 Value : 1
+ Output name : L181 Value : 0
+Name: gate_145 TYPE: nand Input Size: 4
+ Input name : L103 Value : 0
+ Input name : L152 Value : 0
+ Input name : L173 Value : 0
+ Input name : I_30 Value : 1
+ Output name : L182 Value : 0
+Name: gate_146 TYPE: nand Input Size: 4
+ Input name : L104 Value : 0
+ Input name : L153 Value : 0
+ Input name : L174 Value : 0
+ Input name : I_34 Value : 1
+ Output name : L183 Value : 0
+Name: gate_147 TYPE: not Input Size: 1
+ Input name : L175 Value : 1
+ Output name : L184 Value : 0
+Name: gate_148 TYPE: and Input Size: 8
+ Input name : L176 Value : 0
+ Input name : L177 Value : 0
+ Input name : L178 Value : 0
+ Input name : L179 Value : 0
+ Input name : L180 Value : 0
+ Input name : L181 Value : 0
+ Input name : L182 Value : 0
+ Input name : L183 Value : 0
+ Output name : L185 Value : 0
+Name: gate_149 TYPE: not Input Size: 1
+ Input name : L178 Value : 0
+ Output name : L186 Value : 1
+Name: gate_15 TYPE: not Input Size: 1
+ Input name : I_28 Value : 1
+ Output name : L31 Value : 0
+Name: gate_150 TYPE: not Input Size: 1
+ Input name : L180 Value : 0
+ Output name : L187 Value : 1
+Name: gate_151 TYPE: not Input Size: 1
+ Input name : L181 Value : 0
+ Output name : L188 Value : 1
+Name: gate_152 TYPE: not Input Size: 1
+ Input name : L182 Value : 0
+ Output name : L189 Value : 1
+Name: gate_153 TYPE: nor Input Size: 2
+ Input name : L184 Value : 0
+ Input name : L185 Value : 0
+ Output name : O_4 Value : 0
+Name: gate_154 TYPE: nand Input Size: 2
+ Input name : L177 Value : 0
+ Input name : L186 Value : 1
+ Output name : L191 Value : 0
+Name: gate_155 TYPE: nand Input Size: 4
+ Input name : L177 Value : 0
+ Input name : L178 Value : 0
+ Input name : L187 Value : 1
+ Input name : L179 Value : 0
+ Output name : L192 Value : 1
+Name: gate_156 TYPE: nand Input Size: 3
+ Input name : L179 Value : 0
+ Input name : L178 Value : 0
+ Input name : L188 Value : 1
+ Output name : L193 Value : 0
+Name: gate_157 TYPE: nand Input Size: 4
+ Input name : L177 Value : 0
+ Input name : L178 Value : 0
+ Input name : L181 Value : 0
+ Input name : L189 Value : 1
+ Output name : L194 Value : 0
+Name: gate_158 TYPE: nand Input Size: 4
+ Input name : L176 Value : 0
+ Input name : L177 Value : 0
+ Input name : L191 Value : 0
+ Input name : L179 Value : 0
+ Output name : O_5 Value : 1
+Name: gate_159 TYPE: nand Input Size: 4
+ Input name : L176 Value : 0
+ Input name : L177 Value : 0
+ Input name : L192 Value : 1
+ Input name : L193 Value : 0
+ Output name : O_6 Value : 1
+Name: gate_16 TYPE: not Input Size: 1
+ Input name : I_30 Value : 1
+ Output name : L33 Value : 0
+Name: gate_160 TYPE: nand Input Size: 4
+ Input name : L176 Value : 0
+ Input name : L191 Value : 0
+ Input name : L192 Value : 1
+ Input name : L194 Value : 0
+ Output name : O_7 Value : 1
+Name: gate_17 TYPE: not Input Size: 1
+ Input name : I_32 Value : 1
+ Output name : L35 Value : 0
+Name: gate_18 TYPE: not Input Size: 1
+ Input name : I_34 Value : 1
+ Output name : L37 Value : 0
+Name: gate_19 TYPE: nand Input Size: 2
+ Input name : L3 Value : 0
+ Input name : I_2 Value : 1
+ Output name : L38 Value : 0
+Name: gate_2 TYPE: not Input Size: 1
+ Input name : I_2 Value : 1
+ Output name : L5 Value : 0
+Name: gate_20 TYPE: nor Input Size: 2
+ Input name : I_3 Value : 1
+ Input name : L5 Value : 0
+ Output name : L40 Value : 1
+Name: gate_21 TYPE: nor Input Size: 2
+ Input name : I_5 Value : 1
+ Input name : L5 Value : 0
+ Output name : L42 Value : 1
+Name: gate_22 TYPE: nand Input Size: 2
+ Input name : L7 Value : 0
+ Input name : I_6 Value : 1
+ Output name : L43 Value : 0
+Name: gate_23 TYPE: nand Input Size: 2
+ Input name : L11 Value : 0
+ Input name : I_10 Value : 1
+ Output name : L44 Value : 0
+Name: gate_24 TYPE: nand Input Size: 2
+ Input name : L15 Value : 0
+ Input name : I_14 Value : 1
+ Output name : L45 Value : 0
+Name: gate_25 TYPE: nand Input Size: 2
+ Input name : L19 Value : 0
+ Input name : I_18 Value : 1
+ Output name : L46 Value : 0
+Name: gate_26 TYPE: nand Input Size: 2
+ Input name : L23 Value : 0
+ Input name : I_22 Value : 1
+ Output name : L47 Value : 0
+Name: gate_27 TYPE: nand Input Size: 2
+ Input name : L27 Value : 0
+ Input name : I_26 Value : 1
+ Output name : L48 Value : 0
+Name: gate_28 TYPE: nand Input Size: 2
+ Input name : L31 Value : 0
+ Input name : I_30 Value : 1
+ Output name : L49 Value : 0
+Name: gate_29 TYPE: nand Input Size: 2
+ Input name : L35 Value : 0
+ Input name : I_34 Value : 1
+ Output name : L50 Value : 0
+Name: gate_3 TYPE: not Input Size: 1
+ Input name : I_4 Value : 1
+ Output name : L7 Value : 0
+Name: gate_30 TYPE: nor Input Size: 2
+ Input name : I_7 Value : 1
+ Input name : L9 Value : 0
+ Output name : L52 Value : 1
+Name: gate_31 TYPE: nor Input Size: 2
+ Input name : I_9 Value : 1
+ Input name : L9 Value : 0
+ Output name : L54 Value : 1
+Name: gate_32 TYPE: nor Input Size: 2
+ Input name : I_11 Value : 1
+ Input name : L13 Value : 0
+ Output name : L56 Value : 1
+Name: gate_33 TYPE: nor Input Size: 2
+ Input name : I_13 Value : 1
+ Input name : L13 Value : 0
+ Output name : L58 Value : 1
+Name: gate_34 TYPE: nor Input Size: 2
+ Input name : I_15 Value : 1
+ Input name : L17 Value : 0
+ Output name : L60 Value : 1
+Name: gate_35 TYPE: nor Input Size: 2
+ Input name : I_17 Value : 1
+ Input name : L17 Value : 0
+ Output name : L62 Value : 1
+Name: gate_36 TYPE: nor Input Size: 2
+ Input name : I_19 Value : 1
+ Input name : L21 Value : 0
+ Output name : L64 Value : 1
+Name: gate_37 TYPE: nor Input Size: 2
+ Input name : I_21 Value : 1
+ Input name : L21 Value : 0
+ Output name : L66 Value : 1
+Name: gate_38 TYPE: nor Input Size: 2
+ Input name : I_23 Value : 1
+ Input name : L25 Value : 0
+ Output name : L68 Value : 1
+Name: gate_39 TYPE: nor Input Size: 2
+ Input name : I_25 Value : 1
+ Input name : L25 Value : 0
+ Output name : L70 Value : 1
+Name: gate_4 TYPE: not Input Size: 1
+ Input name : I_6 Value : 1
+ Output name : L9 Value : 0
+Name: gate_40 TYPE: nor Input Size: 2
+ Input name : I_27 Value : 1
+ Input name : L29 Value : 0
+ Output name : L72 Value : 1
+Name: gate_41 TYPE: nor Input Size: 2
+ Input name : I_29 Value : 1
+ Input name : L29 Value : 0
+ Output name : L74 Value : 1
+Name: gate_42 TYPE: nor Input Size: 2
+ Input name : I_31 Value : 1
+ Input name : L33 Value : 0
+ Output name : L76 Value : 1
+Name: gate_43 TYPE: nor Input Size: 2
+ Input name : I_33 Value : 1
+ Input name : L33 Value : 0
+ Output name : L78 Value : 1
+Name: gate_44 TYPE: nor Input Size: 2
+ Input name : I_35 Value : 1
+ Input name : L37 Value : 0
+ Output name : L80 Value : 1
+Name: gate_45 TYPE: nor Input Size: 2
+ Input name : I_36 Value : 1
+ Input name : L37 Value : 0
+ Output name : L82 Value : 1
+Name: gate_46 TYPE: and Input Size: 9
+ Input name : L38 Value : 0
+ Input name : L43 Value : 0
+ Input name : L44 Value : 0
+ Input name : L45 Value : 0
+ Input name : L46 Value : 0
+ Input name : L47 Value : 0
+ Input name : L48 Value : 0
+ Input name : L49 Value : 0
+ Input name : L50 Value : 0
+ Output name : L83 Value : 0
+Name: gate_47 TYPE: not Input Size: 1
+ Input name : L83 Value : 0
+ Output name : L84 Value : 1
+Name: gate_48 TYPE: not Input Size: 1
+ Input name : L83 Value : 0
+ Output name : L85 Value : 1
+Name: gate_49 TYPE: not Input Size: 1
+ Input name : L83 Value : 0
+ Output name : O_1 Value : 1
+Name: gate_5 TYPE: not Input Size: 1
+ Input name : I_8 Value : 1
+ Output name : L11 Value : 0
+Name: gate_50 TYPE: xor Input Size: 2
+ Input name : L84 Value : 1
+ Input name : L38 Value : 0
+ Output name : L87 Value : 1
+Name: gate_51 TYPE: xor Input Size: 2
+ Input name : L84 Value : 1
+ Input name : L43 Value : 0
+ Output name : L88 Value : 1
+Name: gate_52 TYPE: xor Input Size: 2
+ Input name : L84 Value : 1
+ Input name : L44 Value : 0
+ Output name : L89 Value : 1
+Name: gate_53 TYPE: xor Input Size: 2
+ Input name : L84 Value : 1
+ Input name : L45 Value : 0
+ Output name : L90 Value : 1
+Name: gate_54 TYPE: xor Input Size: 2
+ Input name : L84 Value : 1
+ Input name : L46 Value : 0
+ Output name : L91 Value : 1
+Name: gate_55 TYPE: xor Input Size: 2
+ Input name : L84 Value : 1
+ Input name : L47 Value : 0
+ Output name : L92 Value : 1
+Name: gate_56 TYPE: nand Input Size: 2
+ Input name : I_1 Value : 1
+ Input name : L85 Value : 1
+ Output name : L93 Value : 1
+Name: gate_57 TYPE: xor Input Size: 2
+ Input name : L84 Value : 1
+ Input name : L48 Value : 0
+ Output name : L94 Value : 1
+Name: gate_58 TYPE: nand Input Size: 2
+ Input name : L85 Value : 1
+ Input name : I_4 Value : 1
+ Output name : L95 Value : 1
+Name: gate_59 TYPE: xor Input Size: 2
+ Input name : L84 Value : 1
+ Input name : L49 Value : 0
+ Output name : L96 Value : 1
+Name: gate_6 TYPE: not Input Size: 1
+ Input name : I_10 Value : 1
+ Output name : L13 Value : 0
+Name: gate_60 TYPE: nand Input Size: 2
+ Input name : L85 Value : 1
+ Input name : I_8 Value : 1
+ Output name : L97 Value : 1
+Name: gate_61 TYPE: xor Input Size: 2
+ Input name : L84 Value : 1
+ Input name : L50 Value : 0
+ Output name : L98 Value : 1
+Name: gate_62 TYPE: nand Input Size: 2
+ Input name : L85 Value : 1
+ Input name : I_12 Value : 1
+ Output name : L99 Value : 1
+Name: gate_63 TYPE: nand Input Size: 2
+ Input name : L85 Value : 1
+ Input name : I_16 Value : 1
+ Output name : L100 Value : 1
+Name: gate_64 TYPE: nand Input Size: 2
+ Input name : L85 Value : 1
+ Input name : I_20 Value : 1
+ Output name : L101 Value : 1
+Name: gate_65 TYPE: nand Input Size: 2
+ Input name : L85 Value : 1
+ Input name : I_24 Value : 1
+ Output name : L102 Value : 1
+Name: gate_66 TYPE: nand Input Size: 2
+ Input name : L85 Value : 1
+ Input name : I_28 Value : 1
+ Output name : L103 Value : 1
+Name: gate_67 TYPE: nand Input Size: 2
+ Input name : L85 Value : 1
+ Input name : I_32 Value : 1
+ Output name : L104 Value : 1
+Name: gate_68 TYPE: nand Input Size: 2
+ Input name : L87 Value : 1
+ Input name : L40 Value : 1
+ Output name : L105 Value : 1
+Name: gate_69 TYPE: nand Input Size: 2
+ Input name : L87 Value : 1
+ Input name : L42 Value : 1
+ Output name : L106 Value : 1
+Name: gate_7 TYPE: not Input Size: 1
+ Input name : I_12 Value : 1
+ Output name : L15 Value : 0
+Name: gate_70 TYPE: nand Input Size: 2
+ Input name : L88 Value : 1
+ Input name : L52 Value : 1
+ Output name : L107 Value : 1
+Name: gate_71 TYPE: nand Input Size: 2
+ Input name : L89 Value : 1
+ Input name : L56 Value : 1
+ Output name : L108 Value : 1
+Name: gate_72 TYPE: nand Input Size: 2
+ Input name : L90 Value : 1
+ Input name : L60 Value : 1
+ Output name : L109 Value : 1
+Name: gate_73 TYPE: nand Input Size: 2
+ Input name : L91 Value : 1
+ Input name : L64 Value : 1
+ Output name : L110 Value : 1
+Name: gate_74 TYPE: nand Input Size: 2
+ Input name : L92 Value : 1
+ Input name : L68 Value : 1
+ Output name : L111 Value : 1
+Name: gate_75 TYPE: nand Input Size: 2
+ Input name : L94 Value : 1
+ Input name : L72 Value : 1
+ Output name : L112 Value : 1
+Name: gate_76 TYPE: nand Input Size: 2
+ Input name : L96 Value : 1
+ Input name : L76 Value : 1
+ Output name : L113 Value : 1
+Name: gate_77 TYPE: nand Input Size: 2
+ Input name : L98 Value : 1
+ Input name : L80 Value : 1
+ Output name : L114 Value : 1
+Name: gate_78 TYPE: nand Input Size: 2
+ Input name : L88 Value : 1
+ Input name : L54 Value : 1
+ Output name : L115 Value : 1
+Name: gate_79 TYPE: nand Input Size: 2
+ Input name : L89 Value : 1
+ Input name : L58 Value : 1
+ Output name : L116 Value : 1
+Name: gate_8 TYPE: not Input Size: 1
+ Input name : I_14 Value : 1
+ Output name : L17 Value : 0
+Name: gate_80 TYPE: nand Input Size: 2
+ Input name : L90 Value : 1
+ Input name : L62 Value : 1
+ Output name : L117 Value : 1
+Name: gate_81 TYPE: nand Input Size: 2
+ Input name : L91 Value : 1
+ Input name : L66 Value : 1
+ Output name : L118 Value : 1
+Name: gate_82 TYPE: nand Input Size: 2
+ Input name : L92 Value : 1
+ Input name : L70 Value : 1
+ Output name : L119 Value : 1
+Name: gate_83 TYPE: nand Input Size: 2
+ Input name : L94 Value : 1
+ Input name : L74 Value : 1
+ Output name : L120 Value : 1
+Name: gate_84 TYPE: nand Input Size: 2
+ Input name : L96 Value : 1
+ Input name : L78 Value : 1
+ Output name : L121 Value : 1
+Name: gate_85 TYPE: nand Input Size: 2
+ Input name : L98 Value : 1
+ Input name : L82 Value : 1
+ Output name : L122 Value : 1
+Name: gate_86 TYPE: and Input Size: 9
+ Input name : L105 Value : 1
+ Input name : L107 Value : 1
+ Input name : L108 Value : 1
+ Input name : L109 Value : 1
+ Input name : L110 Value : 1
+ Input name : L111 Value : 1
+ Input name : L112 Value : 1
+ Input name : L113 Value : 1
+ Input name : L114 Value : 1
+ Output name : L123 Value : 1
+Name: gate_87 TYPE: not Input Size: 1
+ Input name : L106 Value : 1
+ Output name : L124 Value : 0
+Name: gate_88 TYPE: not Input Size: 1
+ Input name : L115 Value : 1
+ Output name : L125 Value : 0
+Name: gate_89 TYPE: not Input Size: 1
+ Input name : L116 Value : 1
+ Output name : L126 Value : 0
+Name: gate_9 TYPE: not Input Size: 1
+ Input name : I_16 Value : 1
+ Output name : L19 Value : 0
+Name: gate_90 TYPE: not Input Size: 1
+ Input name : L117 Value : 1
+ Output name : L127 Value : 0
+Name: gate_91 TYPE: not Input Size: 1
+ Input name : L118 Value : 1
+ Output name : L128 Value : 0
+Name: gate_92 TYPE: not Input Size: 1
+ Input name : L119 Value : 1
+ Output name : L129 Value : 0
+Name: gate_93 TYPE: not Input Size: 1
+ Input name : L120 Value : 1
+ Output name : L130 Value : 0
+Name: gate_94 TYPE: not Input Size: 1
+ Input name : L121 Value : 1
+ Output name : L131 Value : 0
+Name: gate_95 TYPE: not Input Size: 1
+ Input name : L122 Value : 1
+ Output name : L132 Value : 0
+Name: gate_96 TYPE: not Input Size: 1
+ Input name : L123 Value : 1
+ Output name : L133 Value : 0
+Name: gate_97 TYPE: not Input Size: 1
+ Input name : L123 Value : 1
+ Output name : L134 Value : 0
+Name: gate_98 TYPE: not Input Size: 1
+ Input name : L123 Value : 1
+ Output name : O_2 Value : 0
+Name: gate_99 TYPE: xor Input Size: 2
+ Input name : L133 Value : 0
+ Input name : L105 Value : 1
+ Output name : L136 Value : 0
+Simulation is done!
+
+------ Simulation Vectors and Results ------
+
+Circuit input vectors per input : 
+I_1 0 1
+I_10 0 1
+I_11 0 1
+I_12 0 1
+I_13 0 1
+I_14 0 1
+I_15 0 1
+I_16 0 1
+I_17 0 1
+I_18 0 1
+I_19 0 1
+I_2 0 1
+I_20 0 1
+I_21 0 1
+I_22 0 1
+I_23 0 1
+I_24 0 1
+I_25 0 1
+I_26 0 1
+I_27 0 1
+I_28 0 1
+I_29 0 1
+I_3 0 1
+I_30 0 1
+I_31 0 1
+I_32 0 1
+I_33 0 1
+I_34 0 1
+I_35 0 1
+I_36 0 1
+I_4 0 1
+I_5 0 1
+I_6 0 1
+I_7 0 1
+I_8 0 1
+I_9 0 1
+
+Circuit output vectors per output : 
+L100 1 1
+L101 1 1
+L102 1 1
+L103 1 1
+L104 1 1
+L105 1 1
+L106 1 1
+L107 1 1
+L108 1 1
+L109 1 1
+L11 1 0
+L110 1 1
+L111 1 1
+L112 1 1
+L113 1 1
+L114 1 1
+L115 1 1
+L116 1 1
+L117 1 1
+L118 1 1
+L119 1 1
+L120 1 1
+L121 1 1
+L122 1 1
+L123 1 1
+L124 0 0
+L125 0 0
+L126 0 0
+L127 0 0
+L128 0 0
+L129 0 0
+L13 1 0
+L130 0 0
+L131 0 0
+L132 0 0
+L133 0 0
+L134 0 0
+L136 0 0
+L137 0 0
+L138 0 0
+L139 0 0
+L140 1 1
+L141 0 0
+L142 1 0
+L143 0 0
+L144 1 0
+L145 0 0
+L146 1 0
+L147 0 0
+L148 1 0
+L149 0 0
+L15 1 0
+L150 1 0
+L151 1 0
+L152 1 0
+L153 1 0
+L154 1 1
+L155 1 1
+L156 1 1
+L157 1 1
+L158 1 1
+L159 1 1
+L160 1 1
+L161 1 1
+L162 1 1
+L163 1 1
+L164 0 0
+L166 1 1
+L167 1 0
+L168 1 0
+L169 1 0
+L17 1 0
+L170 1 0
+L171 1 0
+L172 1 0
+L173 1 0
+L174 1 0
+L175 1 1
+L176 1 0
+L177 1 0
+L178 1 0
+L179 1 0
+L180 1 0
+L181 1 0
+L182 1 0
+L183 1 0
+L184 0 0
+L185 1 0
+L186 0 1
+L187 0 1
+L188 0 1
+L189 0 1
+L19 1 0
+L191 1 0
+L192 0 1
+L193 1 0
+L194 1 0
+L21 1 0
+L23 1 0
+L25 1 0
+L27 1 0
+L29 1 0
+L3 1 0
+L31 1 0
+L33 1 0
+L35 1 0
+L37 1 0
+L38 1 0
+L40 0 1
+L42 0 1
+L43 1 0
+L44 1 0
+L45 1 0
+L46 1 0
+L47 1 0
+L48 1 0
+L49 1 0
+L5 1 0
+L50 1 0
+L52 0 1
+L54 0 1
+L56 0 1
+L58 0 1
+L60 0 1
+L62 0 1
+L64 0 1
+L66 0 1
+L68 0 1
+L7 1 0
+L70 0 1
+L72 0 1
+L74 0 1
+L76 0 1
+L78 0 1
+L80 0 1
+L82 0 1
+L83 1 0
+L84 0 1
+L85 0 1
+L87 0 1
+L88 0 1
+L89 0 1
+L9 1 0
+L90 0 1
+L91 0 1
+L92 0 1
+L93 1 1
+L94 0 1
+L95 1 1
+L96 0 1
+L97 1 1
+L98 0 1
+L99 1 1
+O_1 0 1
+O_2 0 0
+O_3 0 0
+O_4 0 0
+O_5 1 1
+O_6 0 1
+O_7 0 1
+
+------ Circuit Information ------
+
+Input Names : I_36 I_35 I_33 I_31 I_29 I_27 I_25 I_23 I_21 I_19 I_17 I_15 I_13 I_11 I_9 I_7 I_5 I_3 I_34 I_32 I_30 I_28 I_26 I_24 I_22 I_20 I_18 I_16 I_14 I_12 I_10 I_8 I_6 I_4 I_2 I_1
+
+Output Names : O_7 O_6 O_5 O_4 O_3 O_2 O_1
+
+Gate Names and Types : 
+gate_1 : not
+gate_10 : not
+gate_100 : xor
+gate_101 : xor
+gate_102 : xor
+gate_103 : nand
+gate_104 : xor
+gate_105 : nand
+gate_106 : xor
+gate_107 : nand
+gate_108 : xor
+gate_109 : nand
+gate_11 : not
+gate_110 : xor
+gate_111 : nand
+gate_112 : xor
+gate_113 : nand
+gate_114 : nand
+gate_115 : nand
+gate_116 : nand
+gate_117 : nand
+gate_118 : nand
+gate_119 : nand
+gate_12 : not
+gate_120 : nand
+gate_121 : nand
+gate_122 : nand
+gate_123 : nand
+gate_124 : nand
+gate_125 : nand
+gate_126 : and
+gate_127 : not
+gate_128 : not
+gate_129 : nand
+gate_13 : not
+gate_130 : nand
+gate_131 : nand
+gate_132 : nand
+gate_133 : nand
+gate_134 : nand
+gate_135 : nand
+gate_136 : nand
+gate_137 : nand
+gate_138 : nand
+gate_139 : nand
+gate_14 : not
+gate_140 : nand
+gate_141 : nand
+gate_142 : nand
+gate_143 : nand
+gate_144 : nand
+gate_145 : nand
+gate_146 : nand
+gate_147 : not
+gate_148 : and
+gate_149 : not
+gate_15 : not
+gate_150 : not
+gate_151 : not
+gate_152 : not
+gate_153 : nor
+gate_154 : nand
+gate_155 : nand
+gate_156 : nand
+gate_157 : nand
+gate_158 : nand
+gate_159 : nand
+gate_16 : not
+gate_160 : nand
+gate_17 : not
+gate_18 : not
+gate_19 : nand
+gate_2 : not
+gate_20 : nor
+gate_21 : nor
+gate_22 : nand
+gate_23 : nand
+gate_24 : nand
+gate_25 : nand
+gate_26 : nand
+gate_27 : nand
+gate_28 : nand
+gate_29 : nand
+gate_3 : not
+gate_30 : nor
+gate_31 : nor
+gate_32 : nor
+gate_33 : nor
+gate_34 : nor
+gate_35 : nor
+gate_36 : nor
+gate_37 : nor
+gate_38 : nor
+gate_39 : nor
+gate_4 : not
+gate_40 : nor
+gate_41 : nor
+gate_42 : nor
+gate_43 : nor
+gate_44 : nor
+gate_45 : nor
+gate_46 : and
+gate_47 : not
+gate_48 : not
+gate_49 : not
+gate_5 : not
+gate_50 : xor
+gate_51 : xor
+gate_52 : xor
+gate_53 : xor
+gate_54 : xor
+gate_55 : xor
+gate_56 : nand
+gate_57 : xor
+gate_58 : nand
+gate_59 : xor
+gate_6 : not
+gate_60 : nand
+gate_61 : xor
+gate_62 : nand
+gate_63 : nand
+gate_64 : nand
+gate_65 : nand
+gate_66 : nand
+gate_67 : nand
+gate_68 : nand
+gate_69 : nand
+gate_7 : not
+gate_70 : nand
+gate_71 : nand
+gate_72 : nand
+gate_73 : nand
+gate_74 : nand
+gate_75 : nand
+gate_76 : nand
+gate_77 : nand
+gate_78 : nand
+gate_79 : nand
+gate_8 : not
+gate_80 : nand
+gate_81 : nand
+gate_82 : nand
+gate_83 : nand
+gate_84 : nand
+gate_85 : nand
+gate_86 : and
+gate_87 : not
+gate_88 : not
+gate_89 : not
+gate_9 : not
+gate_90 : not
+gate_91 : not
+gate_92 : not
+gate_93 : not
+gate_94 : not
+gate_95 : not
+gate_96 : not
+gate_97 : not
+gate_98 : not
+gate_99 : xor

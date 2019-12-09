@@ -15,7 +15,9 @@ graphs::graphs(std::map<std::string, std::string> outputPerGateMapGiven,
                std::map<std::string, std::vector<int> > inputsMapGiven,
                std::map<std::string, std::vector<int> > outputMapGiven,
                std::map<std::string, int> adjancencyMapGiven,
-               std::map<std::string, std::string> nameTypeMapGiven, int gateNumberGiven, int inputNumberGiven,
+               std::map<std::string, std::string> nameTypeMapGiven,
+               std::vector<std::string> gateNameVectorGiven,
+               int gateNumberGiven, int inputNumberGiven,
                int outputNumberGiven, int simulationSizeGiven) {
 
     outputPerGateMap = outputPerGateMapGiven;
@@ -28,6 +30,7 @@ graphs::graphs(std::map<std::string, std::string> outputPerGateMapGiven,
     inputNumber      = inputNumberGiven;
     outputNumber     = outputNumberGiven;
     simulationSize   = simulationSizeGiven;
+    gateNameVector   = gateNameVectorGiven;
 
     GateExtractor();
     DFS(); // Finds the depth of the given circuit and classes the gates in order of reach where 0 means inputs and max means outputs
@@ -69,20 +72,22 @@ void graphs::DFS() {
     cout << "DFS begins." << endl;
     bool rangeControl = false;
     while(rangeControl == false) {
-        auto it = gatesMap.begin();
+        //auto it = gatesMap.begin();
+        int it = 0;
+        //cout << gateNameVector[0] << endl;
         auto itControl = adjancencyMap.begin();
-        while (it != gatesMap.end()) {
-            if (it->second->waveRank == 0 && entryLevelGateVerifier(it->second->inputNames)) {
-                it->second->waveRank = 1;
-                adjancencyMap[it->first] = 1;
-                cout << adjancencyMap[it->first] << endl;
-                graphCheckMap.insert(std::pair<std::string, bool>(it->first,false));//Graph creation
-            } else if(it->second->waveRank == 0){
-                it->second->waveRank = postGateVerifier(it->second->inputNames, it->second->waveRank);
-                adjancencyMap[it->first] = it->second->waveRank;
-                cout << adjancencyMap[it->first] << endl;
-                if (it->second->waveRank != 0){ //Graph creation
-                    graphCheckMap.insert(std::pair<std::string, bool>(it->first,false));//Graph creation
+        while (it < gateNumber) {
+            if (gatesMap[gateNameVector[it]]->waveRank == 0 && entryLevelGateVerifier(gatesMap[gateNameVector[it]]->inputNames)) {
+                gatesMap[gateNameVector[it]]->waveRank = 1;
+                adjancencyMap[gateNameVector[it]] = 1;
+                cout << adjancencyMap[gateNameVector[it]] << endl;
+                graphCheckMap.insert(std::pair<std::string, bool>(gateNameVector[it],false));//Graph creation
+            } else if(gatesMap[gateNameVector[it]]->waveRank == 0){
+                gatesMap[gateNameVector[it]]->waveRank = postGateVerifier(gatesMap[gateNameVector[it]]->inputNames, gatesMap[gateNameVector[it]]->waveRank);
+                adjancencyMap[gateNameVector[it]] = gatesMap[gateNameVector[it]]->waveRank;
+                cout << adjancencyMap[gateNameVector[it]] << endl;
+                if (gatesMap[gateNameVector[it]]->waveRank != 0){ //Graph creation
+                    graphCheckMap.insert(std::pair<std::string, bool>(gateNameVector[it],false));//Graph creation
                 }
             }
             it++;
@@ -166,6 +171,7 @@ int graphs::postGateVerifier(std::vector<std::string> gateInputNames, int gateWa
     std::vector<int> waveRankVector(gateInputNames.size(), 0);
     if (gateWaveRank == 0) {
         for (int i = 0; i < gateInputNames.size(); i++) {
+            auto itOut = outputPerGateMap.begin();
             while (itOut != outputPerGateMap.end()) {
                 if (gateInputNames[i] == outputPerGateMap[itOut->first] && gatesMap[itOut->first]->waveRank != 0) { // means not calculated 0 as rank is reserved only for circuit inputs
                     waveRankVector[i] = 1 + gatesMap[itOut->first]->waveRank; //injects potential waverank
