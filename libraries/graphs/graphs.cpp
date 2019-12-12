@@ -78,7 +78,7 @@ void graphs::DFS() {
         int it = 0;
         //cout << gateNameVector[0] << endl;
         auto itControl = adjancencyMap.begin();
-        while (it < gateNumber) {
+        while (it < gateNumber+1) {
             if (gatesMap[gateNameVector[it]]->waveRank == 0 && entryLevelGateVerifier(gatesMap[gateNameVector[it]]->inputNames)) {
                 gatesMap[gateNameVector[it]]->waveRank = 1;
                 adjancencyMap[gateNameVector[it]] = 1;
