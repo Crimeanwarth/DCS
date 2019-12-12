@@ -149,7 +149,7 @@ void graphs::Simulation(int simulationTurnToken) {
             gatesMap[gateNumber->first]->outputValues.push_back(actualGate.output); //indexing result
             outputsMap[gatesMap[gateNumber->first]->outputName][simulationTurnToken] = actualGate.output;// indexing result
         } else {
-            cout << "\033[1;31m ERROR: DFS Re-visits a node, please check your gate names. Line 104 of graphs.cpp \033[0m\n" << endl;
+            cout << "ERROR: DFS Re-visits a node, please check your gate names. Line 104 of graphs.cpp" << endl;
             terminate();
         }
         gateNumber->second = true;

@@ -24,7 +24,7 @@ using namespace std;
             if (inputs.size() == inputsGiven.size()){ //checks if the array sizes are equal in order to prevent segmentation error.
                 inputs = inputsGiven;
             }else{
-                cerr << "\033[1;31m ERROR: Segmentation error : your input size is not the same as the numbers of inputs that are given! \033[0m\n" << endl;
+                cerr << "ERROR: Segmentation error : your input size is not the same as the numbers of inputs that are given!" << endl;
                 terminate();
             }
             outputCalculator();
@@ -40,7 +40,7 @@ using namespace std;
             if (inputs.size() == inputsGiven.size()){ //checks if the array sizes are equal in order to prevent segmentation error.
                 inputs = inputsGiven;
             }else{
-                cerr << "\033[1;31m ERROR: Segmentation error : your input size is not the same as the numbers of inputs that are given! \033[0m\n" << endl;
+                cerr << "Segmentation error : your input size is not the same as the numbers of inputs that are given!" << endl;
                 terminate();
             }
             outputCalculator();
@@ -103,18 +103,18 @@ void logicgates::outputCalculator() { // Calculates output
                     }
                 }
             } else { // Error for alien gate
-                cerr << "\033[1;31m ERROR: Unknown gate type! \033[0m\n" << endl;
+                cerr << "ERROR: Unknown gate type!" << endl;
                 terminate();
             }
         } else if (inputSize == 1) {
             if (type == "not"){
                 output = !inputs[0];
             } else { // Inverters size error
-                cerr << "\033[1;31m ERROR: Inverters can't have more then one input! \033[0m\n" << endl;
+                cerr << " ERROR: Inverters can't have more then one input! " << endl;
                 terminate();
             }
         } else { // Impossible size error
-            cerr << "\033[1;31m ERROR: Input size not possible! \033[0m\n" << endl;
+            cerr << "ERROR: Input size not possible! " << endl;
             terminate();
         }
 }

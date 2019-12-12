@@ -119,19 +119,27 @@ void parser::InputFileParser() {
                 simulationSizeGiven = stoi(line);
                 i++;
             } else {
-                int it = 0;
-                while (it < inputNumberGiven) {
-                    int vec = (int)line.at(it) - 48; // - 48 because in ASCII digits start at 48
-                    inputsMapGiven[circuitInputNameVector[it]].push_back(vec);// / int(pow(10,(inputNumberGiven - 1 - it))));
-                    inputValue = vec; /// pow(10, (inputNumberGiven - 1 - it));
-                    //if (inputValue == 1) {
-                        //vec = vec - pow(10, (inputNumberGiven - 1 - it));
-                    /*} else*/ if (inputValue != 0 && inputValue != 1) {
-                        std::cerr << "\033[1;31m ERROR: Non binary value is found! " << inputFileName << " : " << "line ->" << i << " \033[0m\n" << std::endl;
-                        std::terminate();
-                    }
-                    it++;
-                }
+               if (line.size() == inputNumberGiven) {
+                   int it = 0;
+                   while (it < inputNumberGiven) {
+                       int vec = (int) line.at(it) - 48; // - 48 because in ASCII digits start at 48
+                       inputsMapGiven[circuitInputNameVector[it]].push_back(
+                               vec);// / int(pow(10,(inputNumberGiven - 1 - it))));
+                       inputValue = vec; /// pow(10, (inputNumberGiven - 1 - it));
+                       //if (inputValue == 1) {
+                       //vec = vec - pow(10, (inputNumberGiven - 1 - it));
+                       /*} else*/ if (inputValue != 0 && inputValue != 1) {
+                           std::cerr << "ERROR: Non binary value is found! " << inputFileName << " : "
+                                     << "line ->" << i << std::endl;
+                           std::terminate();
+                       }
+                       it++;
+                   }
+               } else {
+                   std::cerr << "ERROR: Input Vector size is " << line.size() << " when there are " << inputNumberGiven << " circuit inputs! -> " << inputFileName << " : "
+                             << "line -> " << i << std::endl;
+                   std::terminate();
+               }
             }
         }
     }
@@ -159,7 +167,7 @@ void parser::GetArg(int argc, const char * argv[]) {
                 //std::cout << " Circuit file is check ! 4 " << std::endl;
             }
         } else {
-            std::cerr << "\033[1;31m Error: Unknown type has been given! \033[0m\n" << std::endl;
+            std::cerr << "Error: Unknown type has been given!" << std::endl;
             std::cerr << "Example : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
             std::terminate();
         } if (std::string(argv[1]) == inputs || std::string(argv[3]) == inputs){
@@ -171,12 +179,12 @@ void parser::GetArg(int argc, const char * argv[]) {
                 //std::cout << " Inputs file is check ! 4 " << std::endl;
             }
         } else {
-            std::cerr << "\033[1;31m Error: Unknown type has been given! \033[0m\n" << std::endl;
+            std::cerr << "Error: Unknown type has been given!" << std::endl;
             std::cerr << "Example : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
             std::terminate();
         }
     } else {
-        std::cerr << "\033[1;31m Error: Not enough arguments! \033[0m\n" << std::endl;
+        std::cerr << "Error: Not enough arguments!" << std::endl;
         std::cerr << "Example : $ ./DCS -circuit MyCircuit.txt -inputs MyInputs.txt" << std::endl;
         std::terminate();
     }
