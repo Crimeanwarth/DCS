@@ -33,9 +33,9 @@ parser::~parser() {
         }
     }
     std::cout << "\n\nGate Names and Types : " << std::endl;
-    auto it = nameTypeMapGiven.begin();
-    while(it != nameTypeMapGiven.end()){
-        std::cout << it->first << " : " << it->second <<endl;
+    int it = 0;
+    while(it < nameTypeMapGiven.size()){
+        std::cout << gateNameVector[it] << " : " << nameTypeMapGiven[gateNameVector[it]] <<endl;
         it++;
     }
 }

@@ -12,16 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a465302f-8545-4210-a277-f1cefddf5d7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/C499Inputs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C499Inputs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/C499Inputs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/DCS.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/DCS.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/DCS.dir/libraries/logicgates/logicgates.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/DCS.dir/libraries/logicgates/logicgates.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/DCS.dir/libraries/parser/parser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/DCS.dir/libraries/parser/parser.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/DCS.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/DCS.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DCS" beforeDir="false" afterPath="$PROJECT_DIR$/DCS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c432Inputs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/c432Inputs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/error.txt" beforeDir="false" afterPath="$PROJECT_DIR$/error.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/graphs/graphs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/graphs/graphs.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/logicgates/logicgates.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/logicgates/logicgates.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/parser/parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/parser/parser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -133,7 +131,7 @@
       <workItem from="1546302092998" duration="1590000" />
       <workItem from="1574969980765" duration="9845000" />
       <workItem from="1575804856380" duration="22855000" />
-      <workItem from="1576079544490" duration="2843000" />
+      <workItem from="1576079544490" duration="3400000" />
     </task>
     <task id="LOCAL-00001" summary="DFS inner functions defined">
       <created>1574044238014</created>
@@ -338,7 +336,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575870399704</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="error outputs are changed">
+      <created>1576146050239</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1576146050239</updated>
+    </task>
+    <task id="LOCAL-00031" summary="error outputs are changed">
+      <created>1576146106326</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1576146106326</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +396,8 @@
     <MESSAGE value="Debug finished" />
     <MESSAGE value="debugging for scale" />
     <MESSAGE value="debugging for scale finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="debugging for scale finished" />
+    <MESSAGE value="error outputs are changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="error outputs are changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
