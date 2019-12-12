@@ -3,9 +3,9 @@
 #include "./libraries/graphs/graphs.h"
 using namespace std;
 
-int main(/*int argc, const char * argv[]*/) {
-    int argc = 5;
-    const char * argv[] = {"DCS", "-circuit", "/Users/deniztohumcu/Desktop/DCS/c499.txt", "-inputs", "/Users/deniztohumcu/Desktop/DCS/C499Inputs.txt"};
+int main(int argc, const char * argv[]) {
+    //int argc = 5;
+    //const char * argv[] = {"DCS", "-circuit", "/Users/deniztohumcu/Desktop/DCS/c499.txt", "-inputs", "/Users/deniztohumcu/Desktop/DCS/C499Inputs.txt"};
     parser parsed(argc, argv);
     cout << "Digital Circuit Simulator - V1.0 - 2019" << endl;
     cout << "Montpellier University - Master EEA/SEI\n"<< endl;
